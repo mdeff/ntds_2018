@@ -83,3 +83,7 @@ Every time you want to work, do the following:
 [miniconda]: https://conda.io/miniconda.html
 [conda]: https://conda.io
 [conda-forge]: https://conda-forge.org
+
+## License
+
+The content is released under the terms of the [MIT License](LICENSE.txt).
