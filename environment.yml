@@ -1,0 +1,4 @@
+name: ntds_2018
+channels:
+- conda-forge
+- defaults
