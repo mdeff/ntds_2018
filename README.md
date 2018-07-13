@@ -51,9 +51,9 @@ themselves.
 
 ## Projects
 
-This year, the whole course is evaluated by a project (see the description),
-proposed and carried out by groups of three to four students. The students had
-to deliver four milestones, following the theory seen in class:
+This year, the whole course is evaluated by a project, carried out by groups of
+three to four students. See the list of [proposed projects](projects.md). The
+students had to deliver four milestones, following the theory seen in class:
 1. Network properties: measure and interpret some properties of your network
 1. Network models: fit some relevant network models and comment on their fitness
 1. Spectral graph theory: visualize or cluster your graph using the spectrum of the graph Laplacian
