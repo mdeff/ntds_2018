@@ -61,6 +61,10 @@ students had to deliver four milestones, following the theory seen in class:
 
 Below is their work.
 
+## Schedule
+
+TODO
+
 ## Usage
 
 Click the [binder badge][binder_lab] to play with the notebooks from your
