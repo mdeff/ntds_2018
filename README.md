@@ -117,7 +117,7 @@ Every time you want to work, do the following:
 [Hermina Petric Maretic](https://people.epfl.ch/hermina.petricmaretic),
 [Effrosyni Simou](https://people.epfl.ch/effrosyni.simou),
 [Rodrigo Pena](https://rodrigo-pena.github.io),
-[Benjamin Ricaud](https://people.epfl.ch/benjamin.ricaud),
+[Benjamin Ricaud](https://github.com/bricaud),
 [Eda Bayram](https://people.epfl.ch/eda.bayram).
 
 ## License
