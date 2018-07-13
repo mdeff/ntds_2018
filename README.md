@@ -25,22 +25,41 @@ The course material revolves around the following topics:
 Below is the material you'll find in that repository:
 1. Practical information
 1. [Installation instructions](#usage)
-1. Introduction: conda & Anaconda, Python, Jupyter, git, scientific Python
-1. Network properties
-1. Network models
-1. Spectral graph theory
-1. Graph signal processing
+1. Introduction: [conda] & [anaconda], [python], [jupyter], [git]
+1. Numerical computation with [numpy] and [scipy]
+1. Data visualization with [matplotlib]
+1. Data exploration with [pandas]
+1. Network science with [networkx]
+1. Graph signal processing with [pygsp]
 1. Concluding remarks
 
 As a Data Science course, the above activities are realized on real networks,
 e.g. a social network from Twitter, that students have to collect and clean
 themselves.
 
+[conda]: https://conda.io
+[anaconda]: https://anaconda.org
+[python]: https://www.python.org
+[jupyter]: http://jupyter.org
+[git]: https://git-scm.com
+[numpy]: http://www.numpy.org
+[scipy]: https://www.scipy.org
+[matplotlib]: https://matplotlib.org
+[pandas]: https://pandas.pydata.org
+[networkx]: https://networkx.github.io
+[pygsp]: http://pygsp.readthedocs.io
+
 ## Projects
 
-Part of the course is evaluated by a project (see the description),
-proposed and carried out by groups of three to four students. Below is their
-work.
+This year, the whole course is evaluated by a project (see the description),
+proposed and carried out by groups of three to four students. The students had
+to deliver four milestones, following the theory seen in class:
+1. Network properties: measure and interpret some properties of your network
+1. Network models: fit some relevant network models and comment on their fitness
+1. Spectral graph theory: visualize or cluster your graph using the spectrum of the graph Laplacian
+1. Graph signal processing: analyze data on your graph
+
+Below is their work.
 
 ## Usage
 
