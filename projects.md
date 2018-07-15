@@ -70,7 +70,7 @@ Dataset:
 * https://rolandr.github.io/
 
 
-## Graph of news.
+## Graph of news.
 By Benjamin
 
 From a list of news sites, we want to analyze how users view them and intentionally or unintentionally associate them together. We see news sites as nodes of a graph. From some social network data, we connect news if they appear together in the same feed or are referenced by the same user (depends on the social network dataset).
@@ -86,8 +86,32 @@ and the "mention" csv file
 
 ## Twitter Activity of Researchers in CS
 by Ersi
+
 There was an [article](http://blogs.lse.ac.uk/impactofsocialsciences/2017/10/03/new-media-familiar-dynamics-academic-hierarchies-influence-academics-following-behaviour-on-twitter/) about what determines the behaviour of academics on social media (in particular Twitter). The [dataset](https://github.com/l3s/twitter-researcher) used consists of the activity of 1,481 Twitter users. It includes users with at least one publication in the field of computer science who have followed at least one computer science conference on Twitter. 570 professors and 911 PhD students can be identified by using self-descriptions from their Twitter profiles.
 
 ## Facebook URL shares
 by Ersi
+
 [dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EIAACS)
+(not sure about how to get access yet)
+
+## Co-authorship network
+by Ersi
+
+[dataset](https://perso.liris.cnrs.fr/marc.plantevit/doku/doku.php?id=data_sets)
+
+## Kenyan households contact network
+by Ersi
+
+[dataset](http://www.sociopatterns.org/datasets/kenyan-households-contact-network/)
+
+## Patent citation network
+by Ersi
+
+[dataset](http://snap.stanford.edu/data/cit-Patents.html)
+
+## Drosophila medulla connectomics of fly 
+by Ersi
+
+[dataset](http://awesome.cs.jhu.edu/graph-services/download/)
+
