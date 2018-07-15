@@ -84,3 +84,10 @@ Dataset:
 
 and the "mention" csv file 
 
+## Twitter Activity of Researchers in CS
+by Ersi
+There was an [article](http://blogs.lse.ac.uk/impactofsocialsciences/2017/10/03/new-media-familiar-dynamics-academic-hierarchies-influence-academics-following-behaviour-on-twitter/) about what determines the behaviour of academics on social media (in particular Twitter). The [dataset](https://github.com/l3s/twitter-researcher) used consists of the activity of 1,481 Twitter users. It includes users with at least one publication in the field of computer science who have followed at least one computer science conference on Twitter. 570 professors and 911 PhD students can be identified by using self-descriptions from their Twitter profiles.
+
+## Facebook URL shares
+by Ersi
+[dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EIAACS)
