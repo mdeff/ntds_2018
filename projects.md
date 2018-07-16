@@ -115,3 +115,28 @@ by Ersi
 
 [dataset](http://awesome.cs.jhu.edu/graph-services/download/)
 
+## Yelp Dataset
+by Eda (I will add the corresponding challenges later!)
+
+https://www.yelp.com/dataset
+
+## Micro-Video Dataset
+by Eda
+
+http://acmmm16.wixsite.com/mm16
+
+## Spammer Detection on Social Network
+by Eda
+
+https://linqs-data.soe.ucsc.edu/public/social_spammer/
+
+## Cora Citation Network
+by Eda
+
+https://relational.fit.cvut.cz/dataset/CORA
+
+## Global Terrorism Database
+by Eda
+
+https://www.start.umd.edu/gtd/contact/
+http://www.cs.umd.edu/~sen/lbc-proj/LBC.html
