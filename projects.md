@@ -140,3 +140,52 @@ by Eda
 
 https://www.start.umd.edu/gtd/contact/
 http://www.cs.umd.edu/~sen/lbc-proj/LBC.html
+
+
+
+## Bitcoin OTC trust weighted signed network
+
+By Rodrigo
+
+http://snap.stanford.edu/data/soc-sign-bitcoin-otc.html
+
+
+
+## California road network
+
+By Rodrigo
+
+http://snap.stanford.edu/data/roadNet-CA.html
+
+
+
+## Reddit pizza requests
+
+By Rodrigo
+
+http://snap.stanford.edu/data/web-RedditPizzaRequests.html
+
+
+
+## Protein-protein interaction network in yeast
+
+By Rodrigo
+
+http://vlado.fmf.uni-lj.si/pub/networks/data/bio/Yeast/Yeast.htm
+
+
+
+## IMDb co-appearance in films
+
+By Rodrigo
+
+https://www.imdb.com/interfaces/
+
+
+
+## Flight routes
+
+By Rodrigo
+
+https://openflights.org/data.html
+
