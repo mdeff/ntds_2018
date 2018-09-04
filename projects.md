@@ -1,7 +1,8 @@
 # Projects for NTDS 2018
 
 All projects comprise the creation of a network and its analysis.
-For each network created, the goal is to analyze its structure or use it to get valuable information about the dataset. Among the many possibilities, we expect the use of several of the following approaches/tools/techniques:
+For each network created, the goal is to analyze its structure or use it to get valuable information about the dataset.
+Among the many possibilities, we expect the use of several of the following approaches/tools/techniques:
 
 * graph connectivity and degree distributions, graph model (connected components, hubs, scale free, mean degree...),
 * existence and characterization of communities,
@@ -9,12 +10,31 @@ For each network created, the goal is to analyze its structure or use it to get 
 * filtering of values on the nodes / label propagation,
 * dynamic activity on the network.
 
+## Free Music Archive
+By Michaël
 
+The [Free Music Archive](http://freemusicarchive.org/) is a free and open library directed by [WFMU](https://wfmu.org/), the longest-running freeform radio station in the United States.
+Inspired by [Creative Commons](https://creativecommons.org/) and the open-source software movement, the FMA provides a platform for curators, artists, and listeners to harness the potential of music sharing.
+The website provides a large catalog of artists and tracks, hand-picked by established audio curators. Each track is legally free to download as artists decided to release their works under permissive licenses.
 
-## Project title
-By Michaël Defferrard
+The goal of this project is to analyze the content and interactions between the many types of users of an open community.
+Relations can be studied in the form of similarity graphs between tracks.
+The similarity can at first be established from audio features only.
+Motivated students will explore other sources of information, at the level of the tracks, albums, or artists.
+Relations between artists or even users (that requires scraping the website) are also feasible.
 
-Description
+## Voting pattern of US senators
+By Michaël
+
+The goal of this project is to analyze the voting pattern of US senators.
+We will build a graph between senators.
+The signals on the graph are (i) their political party (i.e., republican, democrat, free) and (ii) their voting activity (i.e., what they voted on a list of issues).
+
+Useful resources:
+* [Congress API](https://projects.propublica.org/api-docs/congress-api/)
+* [Blog post on using the API](http://www.storybench.org/use-propublicas-congress-api-see-senators-stand-issues/)
+
+**This project requires to call a web API to gather the data. Be prepared for the additional work incured.**
 
 ## Projects related to the Wikipedia dataset
 By Benjamin
