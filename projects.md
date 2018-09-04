@@ -107,7 +107,12 @@ and the "mention" csv file
 ## Twitter Activity of Researchers in CS
 by Ersi
 
-There was an [article](http://blogs.lse.ac.uk/impactofsocialsciences/2017/10/03/new-media-familiar-dynamics-academic-hierarchies-influence-academics-following-behaviour-on-twitter/) about what determines the behaviour of academics on social media (in particular Twitter). The [dataset](https://github.com/l3s/twitter-researcher) used consists of the activity of 1,481 Twitter users. It includes users with at least one publication in the field of computer science who have followed at least one computer science conference on Twitter. 570 professors and 911 PhD students can be identified by using self-descriptions from their Twitter profiles.
+The [dataset](https://github.com/l3s/twitter-researcher) used consists of the activity of 52678 Twitter users. Of those 170 are Twitter screen names of 98 Computer Science Conferences. These 170 Twitter accounts are set as seeds and more Twitter nodes have been collected if they are i) following a seed or ii) being followed by a seed or iii) have re-tweeted at seed's tweet. Out of the 52678 Twitter users the 9191 are verified to be researchers (they have been matched to a DBLP author profile). 23 features are given for each Twitter user, including for instance a boolean feature demonstrating if the bio description includes words that are usually being used by researchers. The students will have to chose a subset of the 52678 Twitter users by selecting one or more of the seed Twitter pages and the Twitter pages connected to them that belong in this dataset. For this they will have to use Tweepy. 
+
+* milestone 1: potentially a bit heavy for this project because there will have to be some data collection (but still, not too hard)
+* milestone 2: normally, no problem
+* milestone 3: they can use the features provided to build a feature graph and cluster (maybe for instance more famous reserachers and more junior researchers?)
+* milestone 4: If we need labels: for the 9191 nodes we know they are researchers and for the 43.383=52.768-9.191 researchers for sure-170 seeds-24 companies we have labels (but noisy-results of the classification in the [paper](http://delivery.acm.org/10.1145/2620000/2615676/p23-hadgu.pdf?ip=128.179.162.160&id=2615676&acc=ACTIVE%20SERVICE&key=FC66C24E42F07228%2E7E17DDD1CCA0F75B%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1536082760_ba13d3bb439d6413f7e95e096c7aff7c))
 
 ## Facebook URL shares
 by Ersi
