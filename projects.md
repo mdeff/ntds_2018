@@ -256,3 +256,11 @@ To construct a graph, one should connect people that are involved in the same cr
 
 Data:
 http://konect.uni-koblenz.de/networks/moreno_crime
+
+
+## Amphoriskos point cloud dataset
+by Hermina
+
+Coloured pointcloud dataset. The graph can be constructed as a k-nn graph from coordinates, while signals are given in terms of colour. The original content is given in [1]. Various pre-processing steps took place, namely, Poisson Surface reconstruction, sampling of the reconstructed mesh to obtain point cloud vertices, and subsampling of the latter, in order to result in sets of points that correspond to smooth underlying surfaces.
+
+[1] https://sketchfab.com/models/85cba491e0a84ce58dc4a75715073ad2
