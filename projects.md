@@ -235,3 +235,24 @@ By Rodrigo
 
 https://openflights.org/data.html
 
+
+
+
+## Uber dataset
+by Hermina
+
+Data on over 4.5 million Uber pickups in New York City from April to September 2014, and 14.3 million more Uber pickups from January to June 2015. Needs preprocessing to construct a graph, suggested to do so as in: https://arxiv.org/pdf/1611.01456.pdf
+
+Data:
+https://github.com/fivethirtyeight/uber-tlc-foil-response
+
+
+
+## Crime involvment dataset
+by Hermina
+
+Data is given in terms of a bipartite network, which contains persons who appeared in at least one crime case as either a suspect, a victim, a witness or both a suspect and victim at the same time. A left node represents a person and a right node represents a crime. An edge between two nodes shows that the left node was involved in the crime represented by the right node.
+To construct a graph, one should connect people that are involved in the same crime. The signal will be the number of crimes a person is involved in.
+
+Data:
+http://konect.uni-koblenz.de/networks/moreno_crime
