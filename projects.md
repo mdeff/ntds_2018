@@ -107,6 +107,10 @@ Dataset:
 * https://blog.gdeltproject.org/gdelt-2-0-our-global-world-in-realtime/
 
 and the "mention" csv file 
+Some info on the data (description of the columns) can be found here:
+
+https://www.kaggle.com/gdelt/gdelt
+
 
 ## Twitter Activity of Researchers in CS
 by Ersi
