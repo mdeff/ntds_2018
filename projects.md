@@ -80,14 +80,18 @@ https://snap.stanford.edu/data/wiki-meta.html
 ## The /r/place dataset, collaborative behavior on the web.
 By Benjamin
 
-The goal of this project is the get a better understanding of the interactions that can occur online. We will analyze the data from the /r/place reddit experiment. In this experiment, users had access to a page where they could choose one pixel of the page and change its color. They were allowed to make such a modification once every 5min. Very quickly, structured drawings appeared on the page, showing a collaborative behavior in action (see links below).
-To get some insight on the users, we will build a graph of users with connections related to their action. We will assume that the modification of two adjacent pixels in a short period of time is a kind of user interaction. We can strengthen this connection if the color of the modified pixels was the same. Does this graph have communities?
+The goal of this project is to get a better understanding of the interactions that can occur online. We will analyze the data from the /r/place reddit experiment. In this experiment, users had access to a page where they could choose one pixel of the page and change its color. They were allowed to make such a modification once every 5min. Very quickly, structured drawings appeared on the page, showing a collaborative behavior in action (see links below).
+To get some insight on the users, we will build a graph of users with connections related to their action. We will assume that the modification of two adjacent pixels in a short period of time is a kind of user interaction. We can strengthen this connection if the color of the modified pixels was the same. Does this graph have communities? What can we say about human interactions from this dataset? The dataset is large (16 million rows) how can we handle it?
 
 Dataset:
 
 * https://www.kaggle.com/residentmario/reddit-rplace-history
 * https://www.youtube.com/watch?v=XnRCZK3KjUY
 * https://rolandr.github.io/
+
+A first tutorial explaining how to extract the data is given here:
+
+https://www.kaggle.com/residentmario/reconstructing-r-place-images
 
 
 ## Graph of news.
