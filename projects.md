@@ -1,4 +1,4 @@
-# Projects for NTDS 2018
+# Projects for NTDS 2018
 
 All projects comprise the creation of a network and its analysis.
 For each network created, the goal is to analyze its structure or use it to get valuable information about the dataset.
@@ -189,43 +189,36 @@ http://www.cs.umd.edu/~sen/lbc-proj/LBC.html
 
 
 
-## Bitcoin OTC trust weighted signed network
-
-By Rodrigo
-
-http://snap.stanford.edu/data/soc-sign-bitcoin-otc.html
-
-
-
-## California road network
-
-By Rodrigo
-
-http://snap.stanford.edu/data/roadNet-CA.html
-
-
-
-## Reddit pizza requests
-
-By Rodrigo
-
-http://snap.stanford.edu/data/web-RedditPizzaRequests.html
-
-
-
 ## Protein-protein interaction network in yeast
 
 By Rodrigo
 
 http://vlado.fmf.uni-lj.si/pub/networks/data/bio/Yeast/Yeast.htm
 
+This dataset contains the interation network (2361 vertices and 7182 edges) of proteins in budding yeast. 
+
+- The network is given as an edge list (X interacts Y)
+- The proteins are partitioned into 13 different clusters. The indicator function of each cluster could serve as the signal on the graph.
 
 
-## IMDb co-appearance in films
+
+## IMDb films and crew networks
 
 By Rodrigo
 
 https://www.imdb.com/interfaces/
+
+The IMDd datasets contain information such as crew, rating, and genre for every entertainment product in its database.
+
+- A possible approach could be to construct a social network of cast/crew, where the edges are weighted according to co-appearance (e.g. actor_1 is stringly connected to actor_2 if they have appeared in a lot of movies together).
+  - After the graph is constructed, network properties can be analyzed as usual.
+  - Then, a possible signal over this graph should be the aggregate ratings of movies each person has participated in (e.g. actor_1's signal value would be the average of the ratings of every movie he/she took part in).
+  - We could then subsample those ratings and see if the co-apearance information is a good predictor of rating information.
+  - The number of nodes in this graph is of the order of **millions**, so a smaller subset should be constructed.
+- Another approach could be to create a movie-network, in which movies are strongly connected if they share a lot of crew/cast members (or some other similarity measure combining this and whether they have similar genres, running times, and release years).
+  - Again, once the graph is constructed, network properties can be analyzed as usual.
+  - The signal on this graph could be either the movie ratings, or the genre labels.
+  - The number of nodes in this graph is of the order of **millions**, so a smaller subset should be constructed (maybe restrict to feature films of only one genre?).
 
 
 
@@ -233,7 +226,15 @@ https://www.imdb.com/interfaces/
 
 By Rodrigo
 
-https://openflights.org/data.html
+https://openflights.org/data.html#route
+
+This OpenFlights/Airline Route Mapper Route Database contains **67663** routes (EDGES) between **3321** airports (NODES) on **548** airlines spanning the globe dataset contains information on source and destination of flights throuout the globe.
+
+- The graph should be fairly easy to construct, given that each route has a source and destination airport, which gives essentially an edge list. 
+- Visualization of the graph embedded on the globe could be assisted by the supplemented data in https://openflights.org/data.html, which contains, among others, information on latitute/longitude of each airport.
+- The graph is given, so network analysis should be straighforward.
+- The students could also see how well the laplacian eigenmaps explains the geographical embedding of the graph on the world map.
+- A possible signal on the graph could be the (average) number of stops of flights leaving each airport. If we subsample this signal, can we reconstruct it via Tikhonov regularization?
 
 
 
