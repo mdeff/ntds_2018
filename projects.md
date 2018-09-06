@@ -176,16 +176,26 @@ by Eda
 
 https://linqs-data.soe.ucsc.edu/public/social_spammer/
 
+The dataset contains 5.6 million users, which are described by 4 features; "user id", "gender", "age group", "spammer label". There are 7 different type of relations between the users indicating the action between them such as profile view, message, poke, etc., which may lead to 7 different directed graph. In total, there are 858 million link between the users. The original task associated with this dataset is to identify the spammers based on their features and links in the network.
+
+Since this dataset is very big, it requires subsampling even during the loading the data and cleaning the network accordingly.
+
 ## Cora Citation Network
 by Eda
 
 https://relational.fit.cvut.cz/dataset/CORA
 
-## Global Terrorism Database
+CORA citation network is a graph containing 2708 vertices representing papers and 5429 edges representing citations. Each paper is described by a 1433-dimensional bag-of-words feature vector and belongs to seven classes (the field of the study). The feature vectors contain 0/1 values indicating the absence/presence of the corresponding word from the dictionary consisting of 1433 unique words. The asscoiated task with this dataset is usually label prediction.
+
+
+## Terrorism Datasets
 by Eda
 
-https://www.start.umd.edu/gtd/contact/
 http://www.cs.umd.edu/~sen/lbc-proj/LBC.html
+
+**Terrorist Relations :**  This dataset is designed for the classification of the relationships between the terrorists. The dataset contains 851 relations (aka; nodes of the graph). Each node is assigned to least one label (multiple labeling is also possible) among 4 labels; "Colleague", "Congregate", "Contact", "Family", and is described with 0/1 valued feature vector indicating absence/presence of the attributes, which are 1224 in total. There are 8592 edges on the graph, which connects the nodes involving the same terrorist group.
+
+**Terrorist Attacks :** This dataset consists of 1293 terrorist attacks (nodes), each of which is assigned to one of 6 labels indicating the type of the attack. Each attack is described by a 0/1-valued vector of attributes whose entries indicate the absence/presence of a feature. There are a total of 106 distinct features. The files in the dataset can be used to create two distinct graphs. In one of them edges of the graph connect the colocated attacks. On the other one, edges connect co-located terrorist attacks performed by the same terrorist organization.
 
 
 
