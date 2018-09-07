@@ -10,6 +10,28 @@ Among the many possibilities, we expect the use of several of the following appr
 * filtering of values on the nodes / label propagation,
 * dynamic activity on the network.
 
+
+For all projects, some degree of pre-processing is needed before obtaining usable data.
+That is inherent to the work of a data scientist, and will mostly following steps
+
+1. **Data acquisition.**
+   Raw data may need to be (i) collected via a web API, (ii) collected by scraping a website, or (iii) already collected and packaged (for example in a CSV file).
+2. **Data importation.**
+   Raw data needs to be imported in a pandas DataFrame, where rows will be nodes of the network, and columns will be features (or characteristics or attributes) of those nodes.
+3. **Data cleaning.**
+   This step varies a lot from projects to projects.
+   In the context of the course, it will mostly consist in reducing the size of the network so that it can be processed in a reasonable amount of time.
+   The less packaged the raw data, the more cleaning will be necessary.
+4. **Network creation.**
+   The network structure may either be (i) given to you as an adjacency matrix, (ii) given to you as an edge list, or (iii) inferred from raw data.
+
+While those steps are necessary for every project, the amount of pre-processing will however vary.
+If the project requires raw data to be collected or the network to be created, that will be indicated in the project description.
+So if you're a beginner and don't feel confident, choose a project which requires little pre-processing.
+If you feel confident, be adventurous!
+Keep in mind that the amount of work generally trades with flexibility for the second part of the semester.
+Well packaged data usually serve a single task and may restrict your creativity.
+
 ## Free Music Archive
 By Michaël
 
