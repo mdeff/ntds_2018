@@ -15,6 +15,7 @@ The course material revolves around the following topics:
 1. [Network Science](https://en.wikipedia.org/wiki/Network_science),
 1. [Spectral Graph Theory](https://en.wikipedia.org/wiki/Spectral_graph_theory),
 1. [Graph Signal Processing](https://arxiv.org/abs/1211.0053),
+1. [Data Science](https://en.wikipedia.org/wiki/Data_science),
 1. [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning).
 
 Theoretical knowledge is taught during lectures.
