@@ -6,7 +6,7 @@
 [binder_lab]: https://mybinder.org/v2/gh/mdeff/ntds_2018/outputs?urlpath=lab
 [binder_notebook]: https://mybinder.org/v2/gh/mdeff/ntds_2018/outputs?urlpath=tree
 
-This repository contains the material for the labs associated with the EPFL
+This repository contains the material for the practical work associated with the EPFL
 master course [EE-558 A Network Tour of Data Science][epfl] ([moodle]), taught
 in fall 2018. The content is similar to the [2017 edition]. Compared to the
 [2016 edition], the course has been refocused on graph and network sciences.
@@ -16,6 +16,10 @@ The course material revolves around the following topics:
 1. [Spectral Graph Theory](https://en.wikipedia.org/wiki/Spectral_graph_theory),
 1. [Graph Signal Processing](https://arxiv.org/abs/1211.0053),
 1. [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning).
+
+Theoretical knowledge is taught during lectures.
+Practical knowledge is taught through [tutorials](#tutorials).
+Both are practiced and evaluated by a [semester project](#projects).
 
 [epfl]: http://edu.epfl.ch/coursebook/en/a-network-tour-of-data-science-EE-558
 [moodle]: http://moodle.epfl.ch/course/view.php?id=15299
@@ -74,7 +78,7 @@ Below is their work.
 
 TODO
 
-## Usage
+## Installation
 
 Click the [binder badge][binder_lab] to play with the notebooks from your
 browser without installing anything.
