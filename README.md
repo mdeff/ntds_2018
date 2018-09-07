@@ -54,15 +54,21 @@ Below is the material you'll find in this repository.
 
 ## Projects
 
-This year, the whole course is evaluated by a project, carried out by groups of
-three to four students. See the list of [proposed projects](projects.md). The
-students had to deliver four milestones, following the theory seen in class:
-1. Network properties: measure and interpret some properties of your network
-1. Network models: fit some relevant network models and comment on their fitness
-1. Spectral graph theory: visualize or cluster your graph using the spectrum of the graph Laplacian
-1. Graph signal processing: analyze data on your graph
+During the course of a semester project, students exercise the theory seen in class on real data and networks.
+Projects are carried out by groups of four students, and are to be chosen in the list of [proposed projects](projects.md).
+The students have to deliver four milestones, following the theory seen in class:
+
+1. Network properties: measure and interpret some properties of the network.
+1. Network models: fit some relevant network models and comment on their fitness.
+1. Spectral graph theory: visualize or cluster your graph using the spectrum of the graph Laplacian.
+1. Graph signal processing: analyze data (signals, features) on the graph.
+
+After completing those milestones, they are free to pursue any other direction of interest.
+Those data projects are meant to jointly evaluate their theoretical network analysis skills and practical Data Science skills.
 
 Below is their work.
+
+* [report, slides, code] Poject name
 
 ## Schedule
 
