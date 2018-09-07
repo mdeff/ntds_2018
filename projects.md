@@ -45,6 +45,16 @@ The similarity can at first be established from audio features only.
 Motivated students will explore other sources of information, at the level of the tracks, albums, or artists.
 Relations between artists or even users (that requires scraping the website) are also feasible.
 
+|          | Description                                | Amount |
+| -------- | ------------------------------------------ | ------:|
+| nodes    | audio tracks                               | 25'000 |
+| edges    | similarity between tracks                  |    N/A |
+| features | audio features pre-extracted from waveform |    518 |
+| labels   | musical genre (e.g., Rock, Pop)            |     16 |
+
+* **Data acquisition**: already collected and packaged
+* **Network creation**: needs to be built from features
+
 ## Voting pattern of US senators
 By Michaël
 
@@ -52,11 +62,22 @@ The goal of this project is to analyze the voting pattern of US senators.
 We will build a graph between senators.
 The signals on the graph are (i) their political party (i.e., republican, democrat, free) and (ii) their voting activity (i.e., what they voted on a list of issues).
 
+We propose to first build a graph from the votes, i.e., measure the distance between voting vectors.
+Going further, similarity might be measured from the other features, such as bill sponsoring or committee membership.
+
 Useful resources:
-* [Congress API](https://projects.propublica.org/api-docs/congress-api/)
+* [ProPublica Congress API](https://projects.propublica.org/api-docs/congress-api/)
 * [Blog post on using the API](http://www.storybench.org/use-propublicas-congress-api-see-senators-stand-issues/)
 
-**This project requires to call a web API to gather the data. Be prepared for the additional work incured.**
+|          | Description                                              | Amount |
+| -------- | -------------------------------------------------------- | ------:|
+| nodes    | US senators                                              |   ~100 |
+| edges    | similarity between senators                              |    N/A |
+| features | votes, bill sponsoring, committee membership, statements |    N/A |
+| labels   | political party (democrat, republican, independent)      |      3 |
+
+* **Data acquisition**: need to be collected from a web API
+* **Network creation**: needs to be built from features
 
 ## Wikipedia
 By Benjamin
