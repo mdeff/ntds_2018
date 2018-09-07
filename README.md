@@ -22,20 +22,21 @@ The course material revolves around the following topics:
 [2016 edition]: https://github.com/mdeff/ntds_2016
 [2017 edition]: https://github.com/mdeff/ntds_2017
 
-Below is the material you'll find in that repository:
-1. Practical information
-1. [Installation instructions](#usage)
+## Tutorials
+
+Below is the material you'll find in this repository.
+
+1. Practical information about the organization of the course
+1. [Installation instructions](#installation)
 1. Introduction: [conda] & [anaconda], [python], [jupyter], [git]
-1. Numerical computation with [numpy] and [scipy]
-1. Data visualization with [matplotlib]
 1. Data exploration with [pandas]
-1. Network science with [networkx]
+1. Numerical computation with [numpy]
+1. Data visualization with [matplotlib]
+1. Interactive graph visualization with [gephi]
+1. Sparse matrices with [scipy]
+1. Network science with [networkx] and [graph-tool]
 1. Graph signal processing with [pygsp]
 1. Concluding remarks
-
-As a Data Science course, the above activities are realized on real networks,
-e.g. a social network from Twitter, that students have to collect and clean
-themselves.
 
 [conda]: https://conda.io
 [anaconda]: https://anaconda.org
@@ -47,7 +48,9 @@ themselves.
 [matplotlib]: https://matplotlib.org
 [pandas]: https://pandas.pydata.org
 [networkx]: https://networkx.github.io
+[graph-tool]: https://graph-tool.skewed.de
 [pygsp]: http://pygsp.readthedocs.io
+[gephi]: https://gephi.org
 
 ## Projects
 
