@@ -82,26 +82,11 @@ Useful resources:
 ## Wikipedia
 By Benjamin
 
-**TODO Benjamin**: merge and rephrase according to the unique wikipedia project.
+Wikipedia is an enormous source of information visited dayly by millions on users. We can understand more about the human behavior by looking at how it is build and how it is accessed. In this project you will investigate the Wikipedia structure and learn more about our use, as human, of the largest encyclopedia ever.
+Pages, with their hyperlinks, can be seen as a network, connecting related or similar pages. We will use graph algorithms taught in the course to analyze the graph and gather relevant pages together. Label propagation and community detection will help to group and categorize pages.
+In a second step, the number of visits per page (for ne month) will be added to analyze the popularity of the articles and check if it influences the popularity of the neighbor pages. The project is open and students can also have access to the evolution in time of the number of visits (visits per hour or per day). Depending on the students progress and motivation, the time series could be analyzed to get interesting information on Wikipedia. 
 
-Wikipedia is an enormous source of information visited dayly by millions on users. We can understand more about the human behavior by looking at how it is build and how it is accessed. In the following projects you will investigate the Wikipedia structure and learn more about our use, as human, of the largest encyclopedia ever.
-
-Automatic selection/classification of pages.
-
-The project Kiwix aims at diffusing Wikipedia to places with a limited internet access. The idea is to select subsets of Wikipedia that can fit on USB sticks or other small devices with reduced storage capacity in order to be shared more easily. For example they edit a subset of Wikipedia focused on medicine, to be used by physicians in poor countries.
-The goal of the project is to help selecting relevant articles when choosing a subset of Wikipedia pages on a particular topic. Pages, with their hyperlinks, can be seen as a network, connecting related or similar pages. We will use graph algorithms taught in the course to analyze the graph and gather relevant pages together. Label propagation and community detection will help to group and categorize pages.
-
-Dataset:
-Wikipedia dump https://en.wikipedia.org/wiki/Wikipedia:Database_download
-
-Human visits on Wikipedia pages.
-
-From the Wikipedia network of pages and the number of visits per hour given by Wikimedia, we can get some insight on the visitor's behavior.
-In this projet we will associate to each node of a graph a time series. The graph will be the one of Wikipedia pages and the time series will be built from the recorded number of visits per hour for each page. In particular, we want to see how the popularity of a page can influence the popularity of its neighbors.
-We want to answer questions such as: what do human do when reading an article? Do they just read one article or do they tend to click on links and reach neighbor pages? Which link do they select, the ones at the beginning of the article, in the introduction or elsewhere?
-The investigators will make use of signal processing on graphs such as the computation of the signal smoothness, graph clustering or changing the graph structure using the dynamic evolution given by the time series.
-
-Due to the huge amount of data, we will look at fluctuation of popularity during a short period of time (one month) and on a restricted number of pages.
+Due to the huge amount of data, we will look at a reduced number of pages.
 
 Dataset:
 
@@ -109,6 +94,9 @@ Wikipedia dump + Wikipedia data on the number of visits per pages
 
 * https://en.wikipedia.org/wiki/Wikipedia:Database_download
 * https://dumps.wikimedia.org/other/pagecounts-ez/
+
+A reduced dataset, extracted from the links above, will be provided to the students. 
+
 
 ## The /r/place dataset, collaborative behavior on the web
 By Benjamin
