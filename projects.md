@@ -210,6 +210,13 @@ This dataset contains the interation network (2361 vertices and 7182 edges) of p
 - The network is given as an edge list (X interacts Y)
 - The proteins are partitioned into 13 different clusters. The indicator function of each cluster could serve as the signal on the graph.
 
+|          | Description                    | Amount |
+| -------- | ------------------------------ | -----: |
+| nodes    | cast/crew                      |   2361 |
+| edges    | co-apearance in movies/TV/etc. |   7182 |
+| features | N/A                            |    N/A |
+| labels   | cluster assignment             |     13 |
+
 ## IMDb films and crew networks
 
 By Rodrigo
@@ -223,10 +230,25 @@ The IMDd datasets contain information such as crew, rating, and genre for every 
   - Then, a possible signal over this graph should be the aggregate ratings of movies each person has participated in (e.g. actor_1's signal value would be the average of the ratings of every movie he/she took part in).
   - We could then subsample those ratings and see if the co-apearance information is a good predictor of rating information.
   - The number of nodes in this graph is of the order of **millions**, so a smaller subset should be constructed.
+
+|          | Description                            |         Amount |
+| -------- | -------------------------------------- | -------------: |
+| nodes    | cast/crew                              |       Millions |
+| edges    | co-apearance in movies/TV/etc.         | O(10) per node |
+| features | average rating of movies taken part in |              1 |
+| labels   | movie genre                            |        unknown |
+
 - Another approach could be to create a movie-network, in which movies are strongly connected if they share a lot of crew/cast members (or some other similarity measure combining this and whether they have similar genres, running times, and release years).
   - Again, once the graph is constructed, network properties can be analyzed as usual.
   - The signal on this graph could be either the movie ratings, or the genre labels.
   - The number of nodes in this graph is of the order of **millions**, so a smaller subset should be constructed (maybe restrict to feature films of only one genre?).
+
+|          | Description                                           |         Amount |
+| -------- | ----------------------------------------------------- | -------------: |
+| nodes    | movies                                                |       Millions |
+| edges    | count of common cast/crew + other feature similarity. | O(10) per node |
+| features | average rating                                        |              1 |
+| labels   | movie genre                                           |        unknown |
 
 ## Flight routes
 By Rodrigo
@@ -241,7 +263,15 @@ This OpenFlights/Airline Route Mapper Route Database contains **67663** routes (
 - The students could also see how well the laplacian eigenmaps explains the geographical embedding of the graph on the world map.
 - A possible signal on the graph could be the (average) number of stops of flights leaving each airport. If we subsample this signal, can we reconstruct it via Tikhonov regularization?
 
+|          | Description                                 | Amount |
+| -------- | ------------------------------------------- | -----: |
+| nodes    | airports                                    |   3321 |
+| edges    | count of flights connecting airports        |  67663 |
+| features | average number of stops of outbound flights |      1 |
+| labels   | N/A                                         |    N/A |
+
 ## Uber dataset
+
 by Hermina
 
 Data on over 4.5 million Uber pickups in New York City from April to September 2014, and 14.3 million more Uber pickups from January to June 2015. Needs preprocessing to construct a graph, suggested to do so as in: https://arxiv.org/pdf/1611.01456.pdf
