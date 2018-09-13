@@ -210,16 +210,18 @@ This dataset contains the interation network (2361 vertices and 7182 edges) of p
 - The network is given as an edge list (X interacts Y)
 - The proteins are partitioned into 13 different clusters. The indicator function of each cluster could serve as the signal on the graph.
 
-|          | Description                    | Amount |
-| -------- | ------------------------------ | -----: |
-| nodes    | cast/crew                      |   2361 |
-| edges    | co-apearance in movies/TV/etc. |   7182 |
-| features | N/A                            |    N/A |
-| labels   | cluster assignment             |     13 |
+|          | Description        | Amount |
+| -------- | ------------------ | -----: |
+| nodes    | proteins           |   2361 |
+| edges    | protein interation |   7182 |
+| features | N/A                |    N/A |
+| labels   | cluster assignment |     13 |
 
 ## IMDb films and crew networks
 
 By Rodrigo
+
+[2018-09-13 Update] It is also possible to use the dataset here https://www.kaggle.com/tmdb/tmdb-movie-metadata/home, which is already subsampled from IMDb.
 
 https://www.imdb.com/interfaces/
 
