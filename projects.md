@@ -98,6 +98,14 @@ Wikipedia dump + Wikipedia data on the number of visits per pages
 A reduced dataset, extracted from the links above, will be provided to the students. 
 
 
+|          | Description                                | Amount |
+| -------- | ------------------------------------------ | ------:|
+| nodes    | Wikipedia pages                            | ~10000 |
+| edges    | hyperlinks                                 |    N/A |
+| features | nb of visits for one month                 |      1 |
+| labels   | category                                   |    3-5 |
+
+
 ## The /r/place dataset, collaborative behavior on the web
 By Benjamin
 
@@ -113,6 +121,15 @@ Dataset:
 A first tutorial explaining how to extract the data is given here:
 
 https://www.kaggle.com/residentmario/reconstructing-r-place-images
+
+
+|          | Description                                                   | Amount |
+| -------- | ------------------------------------------------------------- | ------:|
+| nodes    | users                                                         | ~10000 |
+| edges    | users interaction (contructed from their spatial interaction) |    N/A |
+| features | color, time                                                   |      2 |
+| labels   | drawing (manually collected from the location in the picture) |    3-5 |
+
 
 ## Graph of news
 By Benjamin
@@ -130,6 +147,16 @@ and the "mention" csv file
 Some info on the data (description of the columns) can be found here:
 
 https://www.kaggle.com/gdelt/gdelt
+
+
+|          | Description                                       | Amount |
+| -------- | ------------------------------------------------- | ------:|
+| nodes    | News sites                                        | ~10000 |
+| edges    | built from the common events they published about |    N/A |
+| features | time, event published, link to the article        |      3 |
+| labels   | country of the site                               |    3-5 |
+
+
 
 ## Twitter Activity of Researchers in CS
 by Ersi
