@@ -1,7 +1,7 @@
 # Projects for NTDS'18
 
-All projects comprise the creation of a network and its analysis.
-For each network created, the goal is to analyze its structure or use it to get valuable information about the dataset.
+All projects encompass the creation of a network and its analysis.
+For each network created, the goal is to analyze its structure and use it to get valuable information about the dataset.
 Among the many possibilities, we expect the use of several of the following approaches/tools/techniques:
 
 * graph connectivity and degree distributions, graph model (connected components, hubs, scale free, mean degree...),
@@ -10,9 +10,8 @@ Among the many possibilities, we expect the use of several of the following appr
 * filtering of values on the nodes / label propagation,
 * dynamic activity on the network.
 
-
 For all projects, some degree of pre-processing is needed before obtaining usable data.
-That is inherent to the work of a data scientist, and will mostly following steps
+That is inherent to the work of a data scientist, and will mostly involve the following steps.
 
 1. **Data acquisition.**
    Raw data may need to be (i) collected via a web API, (ii) collected by scraping a website, or (iii) already collected and packaged (for example in a CSV file).
@@ -58,14 +57,19 @@ The similarity can at first be established from audio features only.
 Motivated students will explore other sources of information, at the level of the tracks, albums, or artists.
 Relations between artists or even users (that requires scraping the website) are also feasible.
 
+Resources:
+* Paper: <https://arxiv.org/abs/1612.01840>
+* Code and data: <https://github.com/mdeff/fma>
+
 |          | Description                                | Amount |
 | -------- | ------------------------------------------ | ------:|
-| nodes    | audio tracks                               | 25'000 |
+| nodes    | audio tracks                               | 25,000 |
 | edges    | similarity between tracks                  |    N/A |
 | features | audio features pre-extracted from waveform |    518 |
 | labels   | musical genre (e.g., Rock, Pop)            |     16 |
 
 * **Data acquisition**: already collected and packaged
+* **Requires down-sampling**: up to the students
 * **Network creation**: needs to be built from features
 
 ## US Senators
@@ -78,7 +82,7 @@ The signals on the graph are (i) their political party (i.e., republican, democr
 We propose to first build a graph from the votes, i.e., measure the distance between voting vectors.
 Going further, similarity might be measured from the other features, such as bill sponsoring or committee membership.
 
-Useful resources:
+Resources:
 * [ProPublica Congress API](https://projects.propublica.org/api-docs/congress-api/)
 * [Blog post on using the API](http://www.storybench.org/use-propublicas-congress-api-see-senators-stand-issues/)
 
@@ -90,6 +94,7 @@ Useful resources:
 | labels   | political party (democrat, republican, independent)      |      3 |
 
 * **Data acquisition**: need to be collected from a web API
+* **Requires down-sampling**: no
 * **Network creation**: needs to be built from features
 
 ## Wikipedia
@@ -97,7 +102,7 @@ By Benjamin
 
 Wikipedia is an enormous source of information visited dayly by millions on users. We can understand more about the human behavior by looking at how it is build and how it is accessed. In this project you will investigate the Wikipedia structure and learn more about our use, as human, of the largest encyclopedia ever.
 Pages, with their hyperlinks, can be seen as a network, connecting related or similar pages. We will use graph algorithms taught in the course to analyze the graph and gather relevant pages together. Label propagation and community detection will help to group and categorize pages.
-In a second step, the number of visits per page (for ne month) will be added to analyze the popularity of the articles and check if it influences the popularity of the neighbor pages. The project is open and students can also have access to the evolution in time of the number of visits (visits per hour or per day). Depending on the students progress and motivation, the time series could be analyzed to get interesting information on Wikipedia. 
+In a second step, the number of visits per page (for ne month) will be added to analyze the popularity of the articles and check if it influences the popularity of the neighbor pages. The project is open and students can also have access to the evolution in time of the number of visits (visits per hour or per day). Depending on the students progress and motivation, the time series could be analyzed to get interesting information on Wikipedia.
 
 Due to the huge amount of data, we will look at a reduced number of pages.
 
@@ -105,18 +110,22 @@ Dataset:
 
 Wikipedia dump + Wikipedia data on the number of visits per pages
 
-* https://en.wikipedia.org/wiki/Wikipedia:Database_download
-* https://dumps.wikimedia.org/other/pagecounts-ez/
+Resources:
+* <https://en.wikipedia.org/wiki/Wikipedia:Database_download>
+* <https://dumps.wikimedia.org/other/pagecounts-ez>
 
-A reduced dataset, extracted from the links above, will be provided to the students. 
+A reduced dataset, extracted from the links above, will be provided to the students.
 
+|          | Description                                |  Amount |
+| -------- | ------------------------------------------ | -------:|
+| nodes    | Wikipedia pages                            | ~10,000 |
+| edges    | hyperlinks                                 |     N/A |
+| features | number of visits for one month             |       1 |
+| labels   | category                                   |     3-5 |
 
-|          | Description                                | Amount |
-| -------- | ------------------------------------------ | ------:|
-| nodes    | Wikipedia pages                            | ~10000 |
-| edges    | hyperlinks                                 |    N/A |
-| features | nb of visits for one month                 |      1 |
-| labels   | category                                   |    3-5 |
+* **Data acquisition**: already collected and packaged
+* **Requires down-sampling**: no
+* **Network creation**: given
 
 ## Researchers on Twitter
 by Ersi
@@ -124,19 +133,16 @@ by Ersi
 The goal of this project is to analyze the interactions of a sub-network of Twitter. The Twitter accounts in this project are Computer Science reasearchers or other accounts "related" to Computer Science.
 The [dataset](https://github.com/l3s/twitter-researcher) used consists of the activity of 52678 Twitter users. Of those 170 are Twitter screen names of 98 Computer Science Conferences. These 170 Twitter accounts are set as seeds and more Twitter nodes have been collected if they are i) following a seed or ii) being followed by a seed or iii) have re-tweeted a seed's tweet. Out of the 52678 Twitter users the 9191 are verified to be researchers (they have been matched to a DBLP author profile). 22 features are given for each Twitter user, including for instance a boolean feature demonstrating if the bio description includes words that are usually being used to describe researchers. You can find a detailed description of the data in [this paper](https://dl.acm.org/citation.cfm?doid=2615569.2615676)
 
-
-|          | Description                                | Amount |
-| -------- | ------------------------------------------ | ------:|
-| nodes    | Twitter accounts                           | 52,678 |
-| edges    | similarity between Twitter accounts or     |        |
-|          |  connections between Twitters accounts     |    N/A |
-| features | numerical and boolean fetures describing   |        |
-|          |  the Twitter profiles                      |     22 |
-| labels   | reseracher or non-researcher               |        |
-|          |  (beware:noisy labels)                     |      2 |
+|          | Description                                                | Amount |
+| -------- | ---------------------------------------------------------- | ------:|
+| nodes    | Twitter accounts                                           | 52,678 |
+| edges    | similarity (or connection) between Twitter accounts        |    N/A |
+| features | numerical and boolean features describing Twitter accounts |     22 |
+| labels   | researcher or non-researcher (noisy label)                 |      2 |
 
 * **Data acquisition**: already collected and packaged (load tsv files). Some data cleaning will be needed.
-* **Network creation**: If you chose to create a similarity graph between the Twitter users, it needs to be built from features. If you chose to build a graph with the connections between users, you must collect information using the Twitter API (Tweepy). As this can be time consuming, we recommend to build a feature graph for the milestones and to explore the connections graph at the last part of the course. Keep in mind that you might need to build different feature graphs for the different milestones. Alo, keep in mind that the labels for this project are noisy. They are the results of the classification of [the paper](https://dl.acm.org/citation.cfm?doid=2615569.2615676) mentioned before.
+* **Requires down-sampling**: up to the students
+* **Network creation**: If you chose to create a similarity graph between the Twitter users, it needs to be built from features. If you chose to build a graph with the connections between users, you must collect information using the Twitter API (Tweepy). As this can be time consuming, we recommend to build a feature graph for the milestones and to explore the connections graph at the last part of the course. Keep in mind that you might need to build different feature graphs for the different milestones. Also, keep in mind that the labels for this project are noisy. They are the results of the classification of [the paper](https://dl.acm.org/citation.cfm?doid=2615569.2615676) mentioned before.
 
 ## Scientific co-Authorship
 by Ersi
@@ -144,18 +150,18 @@ by Ersi
 This project aims to explore the co-authorship behaviour of scientific authors.
 The [dataset](https://perso.liris.cnrs.fr/marc.plantevit/doku/doku.php?id=data_sets) is a co-authorship graph built from the DBLP digital library. Each vertex represents an author that has published at least one paper in one of the major conferences and journals of the Data Mining and Database communities between January 1990 and February 2011. Each edge links two authors who co-authored at least one paper (no matter the conference or journal). The vertex properties are the number of publications in each of the 29 selected conferences or journals and 9 topological properties (Degree Cent., Closeness Cent., Betweenness Cent., EigenVector Cent., PageRank, Clustering Coeff., Size of Max. Quasi-Clique, Number of Quasi-Cliques, Size of Community).
 
-|          | Description                                 |    Amount  |
-| -------- | ------------------------------------------  |     ------:|
-| nodes    | authors                                     |     42,252 |
-| edges    | number of co-authorships in published papers|    210,320 |
-| features | number of prublications in conferences and  |            |
-|          |    topological features                     |         38 |
-| labels   |                                             |        N/A |
+|          | Description                                                    | Amount  |
+| -------- | -------------------------------------------------------------- | -------:|
+| nodes    | scientific authors                                             |  42,252 |
+| edges    | authors are linked if they wrote a paper together              | 210,320 |
+| features | number of publications in conferences and topological features |      38 |
+| labels   | N/A                                                            |     N/A |
 
 * **Data acquisition**: already collected and packaged (load txt files)
+* **Requires down-sampling**: up to the students
 * **Network creation**: The connections between the nodes are already provided.
 
-Remark 1: There are no labels given for the nodes in this dataset. You can chose as your labels two subsets of the conferences (e.g. KDD and AAAI)
+Remark 1: There are no labels given for the nodes in this dataset. You can chose as your labels two subsets of the conferences (e.g., KDD and AAAI).
 
 Remark 2: The creator of this dataset has agreed to provide the data for this project. However, they will be given to you through a private channel and you should not re-distribute it.
 
@@ -241,12 +247,11 @@ Resources:
 * **Network creation**: network is given as a list of edges
 
 ## IMDb Films and Crews
-
 By Rodrigo
 
-[2018-09-13 Update] It is also possible to use the dataset here https://www.kaggle.com/tmdb/tmdb-movie-metadata/home, which is already subsampled from IMDb.
-
-https://www.imdb.com/interfaces/
+Resources:
+* <https://www.imdb.com/interfaces>
+* <https://www.kaggle.com/tmdb/tmdb-movie-metadata/home>
 
 The IMDd datasets contain information such as crew, rating, and genre for every entertainment product in its database.
 
@@ -275,22 +280,31 @@ The IMDd datasets contain information such as crew, rating, and genre for every 
 | features | average rating                                        |              1 |
 | labels   | movie genre                                           |        unknown |
 
+* **Data acquisition**: already collected and packaged
+* **Requires down-sampling**: yes if using the original datasets from IMDb, no if using the subsampled dataset from Kaggle
+* **Network creation**: needs to be built from features
+
 ## Flight Routes
 By Rodrigo
 
-https://openflights.org/data.html#route
-
-This OpenFlights/Airline Route Mapper Route Database contains **67663** routes (EDGES) between **3321** airports (NODES) on **548** airlines spanning the globe dataset contains information on source and destination of flights throuout the globe.
+This OpenFlights/Airline Route Mapper Route Database contains 67,663 routes (EDGES) between 3,321 airports (NODES) on 548 airlines spanning the globe dataset contains information on source and destination of flights throughout the globe.
 
 - The graph should be fairly easy to construct, given that each route has a source and destination airport, which gives essentially an edge list.
 - Visualization of the graph embedded on the globe could be assisted by the supplemented data in https://openflights.org/data.html, which contains, among others, information on latitute/longitude of each airport.
-- The graph is given, so network analysis should be straighforward.
+- The graph is given, so network analysis should be straightforward.
 - The students could also see how well the laplacian eigenmaps explains the geographical embedding of the graph on the world map.
 - A possible signal on the graph could be the (average) number of stops of flights leaving each airport. If we subsample this signal, can we reconstruct it via Tikhonov regularization?
 
+Resources:
+* <https://openflights.org/data.html#route>
+
 |          | Description                                 | Amount |
 | -------- | ------------------------------------------- | -----: |
-| nodes    | airports                                    |   3321 |
-| edges    | count of flights connecting airports        |  67663 |
+| nodes    | airports                                    |  3,321 |
+| edges    | count of flights connecting airports        | 67,663 |
 | features | average number of stops of outbound flights |      1 |
 | labels   | N/A                                         |    N/A |
+
+* **Data acquisition**: already collected and packaged
+* **Requires down-sampling**: no
+* **Network creation**: network is given as a list of edges
