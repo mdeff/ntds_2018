@@ -186,7 +186,7 @@ This project aims to explore the co-authorship behaviour of scientific authors.
 The [dataset](https://perso.liris.cnrs.fr/marc.plantevit/doku/doku.php?id=data_sets) is a co-authorship graph built from the DBLP digital library. Each vertex represents an author that has published at least one paper in one of the major conferences and journals of the Data Mining and Database communities between January 1990 and February 2011. Each edge links two authors who co-authored at least one paper (no matter the conference or journal). The vertex properties are the number of publications in each of the 29 selected conferences or journals and 9 topological properties (Degree Cent., Closeness Cent., Betweenness Cent., EigenVector Cent., PageRank, Clustering Coeff., Size of Max. Quasi-Clique, Number of Quasi-Cliques, Size of Community).
 
 |          | Description                                 |    Amount  |
-| -------- | ------------------------------------------  |    ------ :|
+| -------- | ------------------------------------------  |     ------:|
 | nodes    | authors                                     |     42,252 |
 | edges    | number of co-authorships in published papers|    210,320 |
 | features | number of prublications in conferences and  |            |
