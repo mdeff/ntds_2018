@@ -158,32 +158,48 @@ https://www.kaggle.com/gdelt/gdelt
 
 
 
-## Twitter Activity of Researchers in CS
+## Twitter Activity of Researchers in Computer Science
 by Ersi
 
-The [dataset](https://github.com/l3s/twitter-researcher) used consists of the activity of 52678 Twitter users. Of those 170 are Twitter screen names of 98 Computer Science Conferences. These 170 Twitter accounts are set as seeds and more Twitter nodes have been collected if they are i) following a seed or ii) being followed by a seed or iii) have re-tweeted at seed's tweet. Out of the 52678 Twitter users the 9191 are verified to be researchers (they have been matched to a DBLP author profile). 23 features are given for each Twitter user, including for instance a boolean feature demonstrating if the bio description includes words that are usually being used by researchers. The students will have to chose a subset of the 52678 Twitter users by selecting one or more of the seed Twitter pages and the Twitter pages connected to them that belong in this dataset. For this they will have to use Tweepy.
-
-* milestone 1: potentially a bit heavy for this project because there will have to be some data collection (but still, not too hard)Here they should create a connections graph, because they won't know yet how to create a feature graph. They can usee last year's assignment 1 for help. If they chose to build a feature graph no API needed.
-* milestone 2: normally, no problem
-* milestone 3: they can use the features provided to build a feature graph and cluster (maybe for instance more famous reserachers and more junior researchers?)
-* milestone 4: If we need labels: for the 9191 nodes we know they are researchers and for the 43.383=52.768-9.191 researchers for sure-170 seeds-24 companies we have labels (but noisy-results of the classification in the [paper](http://delivery.acm.org/10.1145/2620000/2615676/p23-hadgu.pdf?ip=128.179.162.160&id=2615676&acc=ACTIVE%20SERVICE&key=FC66C24E42F07228%2E7E17DDD1CCA0F75B%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1536082760_ba13d3bb439d6413f7e95e096c7aff7c))
+The goal of this project is to analyze the interactions of a sub-network of Twitter. The Twitter accounts in this project are Computer Science reasearchers or other accounts "related" to Computer Science.
+The [dataset](https://github.com/l3s/twitter-researcher) used consists of the activity of 52678 Twitter users. Of those 170 are Twitter screen names of 98 Computer Science Conferences. These 170 Twitter accounts are set as seeds and more Twitter nodes have been collected if they are i) following a seed or ii) being followed by a seed or iii) have re-tweeted at seed's tweet. Out of the 52678 Twitter users the 9191 are verified to be researchers (they have been matched to a DBLP author profile). 23 features are given for each Twitter user, including for instance a boolean feature demonstrating if the bio description includes words that are usually being used to describe researchers. You can find a detailed description of the data in [this paper](http://delivery.acm.org/10.1145/2620000/2615676/p23-hadgu.pdf?ip=128.179.162.160&id=2615676&acc=ACTIVE%20SERVICE&key=FC66C24E42F07228%2E7E17DDD1CCA0F75B%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1536082760_ba13d3bb439d6413f7e95e096c7aff7c))
 
 
-remark 1: they should make sure that the graph is undirected?
-remark 2: a bit hard project because they will have to do some data collection. Howver more interesting thing to look into. Could be interesting for students who want to expand a lot in the extra stuff part.
+|          | Description                                | Amount |
+| -------- | ------------------------------------------ | ------:|
+| nodes    | Twitter accounts                           | 52,678 |
+| edges    | similarity between Twitter accounts or     |        |
+|          |  connections between Twitters accounts     |    N/A |
+| features | numerical and boolean fetures describing   |        |
+|          |  the Twitter profiles                      |     22 |
+| labels   | reseracher or non-researcher               |        |
+|          |  (beware:noisy labels)                     |      2 |
+
+* **Data acquisition**: already collected and packaged (load tsv files). Some data cleaning will be needed.
+* **Network creation**: If you chose to create a similarity graph between the Twitter users, it needs to be built from features. If you chose to build a graph with the connections between users, you must collect information using the Twitter API (Tweepy). As this can be time consuming, we recommend to build a feature graph for the assignments and to explore the connections graph at the last part of the course. Keep in mind that you might need to build different feature graphs for the different milestones. Alo, keep in mind that the labels for this project are noisy. They are the results of the classification of [the paper](http://delivery.acm.org/10.1145/2620000/2615676/p23-hadgu.pdf?ip=128.179.162.160&id=2615676&acc=ACTIVE%20SERVICE&key=FC66C24E42F07228%2E7E17DDD1CCA0F75B%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1536082760_ba13d3bb439d6413f7e95e096c7aff7c)) mentioned before.
+
 
 ## Co-authorship network
 by Ersi
 
-The data set is a co-authorship graph built from the DBLP digital library. Each vertex represents an author that has published at least one paper in one of the major conferences and journals of the Data Mining and Database communities between January 1990 and February 2011. Each edge links two authors who co-authored at least one paper (no matter the conference or journal). The vertex properties are the number of publications in each of the 29 selected conferences or journals and we also consider 9 topological properties (Degree Cent., Closeness Cent., Betweenness Cent., EigenVector Cent., PageRank, Clustering Coeff., Size of Max. Quasi-Clique, Number of Quasi-Cliques, Size of Community).
+This project aims to explore the co-authorship behaviour of scientific authors.
+The [dataset](https://perso.liris.cnrs.fr/marc.plantevit/doku/doku.php?id=data_sets) is a co-authorship graph built from the DBLP digital library. Each vertex represents an author that has published at least one paper in one of the major conferences and journals of the Data Mining and Database communities between January 1990 and February 2011. Each edge links two authors who co-authored at least one paper (no matter the conference or journal). The vertex properties are the number of publications in each of the 29 selected conferences or journals and 9 topological properties (Degree Cent., Closeness Cent., Betweenness Cent., EigenVector Cent., PageRank, Clustering Coeff., Size of Max. Quasi-Clique, Number of Quasi-Cliques, Size of Community).
 
-* milestone 1: straightforward: the graph is already given
-* milestone 2: ok
-* milestone 3: # vertices=42.252, #edges=210.320. should be ok for decomposition, otherwise we can sparsify. There are indications of communities (look at topological attributes of vertices)
-* milestone 4: maybe use as signal the number of publication at a conference??
+|          | Description                                 |    Amount  |
+| -------- | ------------------------------------------  |    ------ :|
+| nodes    | authors                                     |     42,252 |
+| edges    | number of co-authorships in published papers|    210,320 |
+| features | number of prublications in conferences and  |            |
+|          |    topological features                     |         38 |
+| labels   |                                             |        N/A |
 
-Remark: The creator of this dataset has given me the data and I can use them form the project. However, they should not be released publicly throught Github, but through a private channel.
-[dataset](https://perso.liris.cnrs.fr/marc.plantevit/doku/doku.php?id=data_sets)
+* **Data acquisition**: already collected and packaged (load txt files)
+* **Network creation**: The connections between the nodes are already provided.
+
+Remark 1: There are no labels given for the nodes in this dataset. You can chose as your labels two subsets of the conferences (e.g. KDD and AAAI)
+
+Remark 2: The creator of this dataset has agreed to provide the data for this project. However, they will be given to you through a private channel and you should not re-distribute it.
+
 
 ## Spammer Detection on Social Network
 by Eda
