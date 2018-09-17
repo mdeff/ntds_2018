@@ -118,59 +118,6 @@ A reduced dataset, extracted from the links above, will be provided to the stude
 | features | nb of visits for one month                 |      1 |
 | labels   | category                                   |    3-5 |
 
-
-## The /r/place dataset, collaborative behavior on the web
-By Benjamin
-
-The goal of this project is to get a better understanding of the interactions that can occur online. We will analyze the data from the /r/place reddit experiment. In this experiment, users had access to a page where they could choose one pixel of the page and change its color. They were allowed to make such a modification once every 5min. Very quickly, structured drawings appeared on the page, showing a collaborative behavior in action (see links below).
-To get some insight on the users, we will build a graph of users with connections related to their action. We will assume that the modification of two adjacent pixels in a short period of time is a kind of user interaction. We can strengthen this connection if the color of the modified pixels was the same. Does this graph have communities? What can we say about human interactions from this dataset? The dataset is large (16 million rows) how can we handle it?
-
-Dataset:
-
-* https://www.kaggle.com/residentmario/reddit-rplace-history
-* https://www.youtube.com/watch?v=XnRCZK3KjUY
-* https://rolandr.github.io/
-
-A first tutorial explaining how to extract the data is given here:
-
-https://www.kaggle.com/residentmario/reconstructing-r-place-images
-
-
-|          | Description                                                   | Amount |
-| -------- | ------------------------------------------------------------- | ------:|
-| nodes    | users                                                         | ~10000 |
-| edges    | users interaction (contructed from their spatial interaction) |    N/A |
-| features | color, time                                                   |      2 |
-| labels   | drawing (manually collected from the location in the picture) |    3-5 |
-
-
-## Graph of news
-By Benjamin
-
-From a list of news sites, we want to analyze how users view them and intentionally or unintentionally associate them together. We see news sites as nodes of a graph. From some social network data, we connect news if they appear together in the same feed or are referenced by the same user (depends on the social network dataset).
-
-the Gdelt project (see links below) provide several datasets related to the news and the news coverage. One of them relate news events to a unique ID and report any publication about this event in the online news. A network of news sites can be made to get a better picture on how much they share the same information. News that report the same events would be linked in the network. The connection weights would increase as the number of shared news increases. Can we make some interesting and clean visualizations of the news sites landscape? Can we categorize them? Are there news sites that are more central? Do we get different networks if we take into account news related to particular topics? Can we combine additional info present in the data with the graph to get additional insights?
-
-Dataset:
-
-* https://blog.gdeltproject.org/the-datasets-of-gdelt-as-of-february-2016/
-* https://blog.gdeltproject.org/gdelt-2-0-our-global-world-in-realtime/
-
-and the "mention" csv file
-Some info on the data (description of the columns) can be found here:
-
-https://www.kaggle.com/gdelt/gdelt
-
-
-|          | Description                                       | Amount |
-| -------- | ------------------------------------------------- | ------:|
-| nodes    | News sites                                        | ~10000 |
-| edges    | built from the common events they published about |    N/A |
-| features | time, event published, link to the article        |      3 |
-| labels   | country of the site                               |    3-5 |
-
-
-
 ## Researchers on Twitter
 by Ersi
 
@@ -190,7 +137,6 @@ The [dataset](https://github.com/l3s/twitter-researcher) used consists of the ac
 
 * **Data acquisition**: already collected and packaged (load tsv files). Some data cleaning will be needed.
 * **Network creation**: If you chose to create a similarity graph between the Twitter users, it needs to be built from features. If you chose to build a graph with the connections between users, you must collect information using the Twitter API (Tweepy). As this can be time consuming, we recommend to build a feature graph for the milestones and to explore the connections graph at the last part of the course. Keep in mind that you might need to build different feature graphs for the different milestones. Alo, keep in mind that the labels for this project are noisy. They are the results of the classification of [the paper](https://dl.acm.org/citation.cfm?doid=2615569.2615676) mentioned before.
-
 
 ## Scientific co-Authorship
 by Ersi
@@ -212,7 +158,6 @@ The [dataset](https://perso.liris.cnrs.fr/marc.plantevit/doku/doku.php?id=data_s
 Remark 1: There are no labels given for the nodes in this dataset. You can chose as your labels two subsets of the conferences (e.g. KDD and AAAI)
 
 Remark 2: The creator of this dataset has agreed to provide the data for this project. However, they will be given to you through a private channel and you should not re-distribute it.
-
 
 ## Spammers on Social Networks
 by Eda
@@ -295,23 +240,6 @@ Resources:
 * **Requires down-sampling**: no
 * **Network creation**: network is given as a list of edges
 
-## Protein-protein interaction network in yeast
-By Rodrigo
-
-http://vlado.fmf.uni-lj.si/pub/networks/data/bio/Yeast/Yeast.htm
-
-This dataset contains the interation network (2361 vertices and 7182 edges) of proteins in budding yeast.
-
-- The network is given as an edge list (X interacts Y)
-- The proteins are partitioned into 13 different clusters. The indicator function of each cluster could serve as the signal on the graph.
-
-|          | Description        | Amount |
-| -------- | ------------------ | -----: |
-| nodes    | proteins           |   2361 |
-| edges    | protein interation |   7182 |
-| features | N/A                |    N/A |
-| labels   | cluster assignment |     13 |
-
 ## IMDb Films and Crews
 
 By Rodrigo
@@ -366,28 +294,3 @@ This OpenFlights/Airline Route Mapper Route Database contains **67663** routes (
 | edges    | count of flights connecting airports        |  67663 |
 | features | average number of stops of outbound flights |      1 |
 | labels   | N/A                                         |    N/A |
-
-## Uber dataset
-
-by Hermina
-
-Data on over 4.5 million Uber pickups in New York City from April to September 2014, and 14.3 million more Uber pickups from January to June 2015. Needs preprocessing to construct a graph, suggested to do so as in: https://arxiv.org/pdf/1611.01456.pdf
-
-Data:
-https://github.com/fivethirtyeight/uber-tlc-foil-response
-
-## Crime involvment dataset
-by Hermina
-
-Data is given in terms of a bipartite network, which contains persons who appeared in at least one crime case as either a suspect, a victim, a witness or both a suspect and victim at the same time. A left node represents a person and a right node represents a crime. An edge between two nodes shows that the left node was involved in the crime represented by the right node.
-To construct a graph, one should connect people that are involved in the same crime. The signal will be the number of crimes a person is involved in.
-
-Data:
-http://konect.uni-koblenz.de/networks/moreno_crime
-
-## Amphoriskos point cloud dataset
-by Hermina
-
-Coloured pointcloud dataset. The graph can be constructed as a k-nn graph from coordinates, while signals are given in terms of colour. The original content is given in [1]. Various pre-processing steps took place, namely, Poisson Surface reconstruction, sampling of the reconstructed mesh to obtain point cloud vertices, and subsampling of the latter, in order to result in sets of points that correspond to smooth underlying surfaces.
-
-[1] https://sketchfab.com/models/85cba491e0a84ce58dc4a75715073ad2
