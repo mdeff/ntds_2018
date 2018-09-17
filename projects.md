@@ -32,6 +32,19 @@ If you feel confident, be adventurous!
 Keep in mind that the amount of work generally trades with flexibility for the second part of the semester.
 Well packaged data usually serve a single task and may restrict your creativity.
 
+## List of proposed projects
+
+* [Free Music Archive](#free-music-archive)
+* [US Senators](#us-senators)
+* [Wikipedia](#wikipedia)
+* [Researchers on Twitter](#researchers-on-twitter)
+* [Scientific co-Authorship](#scientific-co-authorship)
+* [Spammers on Social Networks](#spammers-on-social-networks)
+* [Citation Network](#citation-network)
+* [Terrorist Attacks and Relations](#terrorist-attacks-and-relations)
+* [IMDb Films and Crews](#imdb-films-and-crews)
+* [Flight Routes](#flight-routes)
+
 ## Free Music Archive
 By Michaël
 
@@ -55,7 +68,7 @@ Relations between artists or even users (that requires scraping the website) are
 * **Data acquisition**: already collected and packaged
 * **Network creation**: needs to be built from features
 
-## Voting pattern of US senators
+## US Senators
 By Michaël
 
 The goal of this project is to analyze the voting pattern of US senators.
@@ -158,7 +171,7 @@ https://www.kaggle.com/gdelt/gdelt
 
 
 
-## Twitter Activity of Researchers in Computer Science
+## Researchers on Twitter
 by Ersi
 
 The goal of this project is to analyze the interactions of a sub-network of Twitter. The Twitter accounts in this project are Computer Science reasearchers or other accounts "related" to Computer Science.
@@ -179,7 +192,7 @@ The [dataset](https://github.com/l3s/twitter-researcher) used consists of the ac
 * **Network creation**: If you chose to create a similarity graph between the Twitter users, it needs to be built from features. If you chose to build a graph with the connections between users, you must collect information using the Twitter API (Tweepy). As this can be time consuming, we recommend to build a feature graph for the milestones and to explore the connections graph at the last part of the course. Keep in mind that you might need to build different feature graphs for the different milestones. Alo, keep in mind that the labels for this project are noisy. They are the results of the classification of [the paper](https://dl.acm.org/citation.cfm?doid=2615569.2615676) mentioned before.
 
 
-## Co-authorship network
+## Scientific co-Authorship
 by Ersi
 
 This project aims to explore the co-authorship behaviour of scientific authors.
@@ -299,7 +312,7 @@ This dataset contains the interation network (2361 vertices and 7182 edges) of p
 | features | N/A                |    N/A |
 | labels   | cluster assignment |     13 |
 
-## IMDb films and crew networks
+## IMDb Films and Crews
 
 By Rodrigo
 
@@ -334,7 +347,7 @@ The IMDd datasets contain information such as crew, rating, and genre for every 
 | features | average rating                                        |              1 |
 | labels   | movie genre                                           |        unknown |
 
-## Flight routes
+## Flight Routes
 By Rodrigo
 
 https://openflights.org/data.html#route
