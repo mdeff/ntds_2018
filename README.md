@@ -133,6 +133,10 @@ Every time you want to work, do the following:
 [Rodrigo Pena](https://rodrigo-pena.github.io),
 [Benjamin Ricaud](https://people.epfl.ch/benjamin.ricaud),
 [Eda Bayram](https://people.epfl.ch/eda.bayram).
+* Invited lecturers:
+[Kirell Benzi](https://www.kirellbenzi.com),
+[Dorina Thanou](https://people.epfl.ch/dorina.thanou),
+[Michaël Defferrard](http://deff.ch).
 
 ## License
 
