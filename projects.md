@@ -253,32 +253,27 @@ Resources:
 * <https://www.imdb.com/interfaces>
 * <https://www.kaggle.com/tmdb/tmdb-movie-metadata/home>
 
-The IMDd datasets contain information such as crew, rating, and genre for every entertainment product in its database.
+The IMDb datasets contain information such as crew, rating, and genre for every entertainment product in its database. The Kaggle dataset linked above is a smaller, but similar dataset, and could be used instead of the IMDb one, which is much larger. The goal of this project is to analyze this database in graph form, and attempt to recover missing information from data on cast/crew co-appearance in movies. The graphical analysis requires network creation, for which two possible paths are possible, according to which instances one wishes to consider as the nodes of the network.
 
-- A possible approach could be to construct a social network of cast/crew, where the edges are weighted according to co-appearance (e.g. actor_1 is stringly connected to actor_2 if they have appeared in a lot of movies together).
-  - After the graph is constructed, network properties can be analyzed as usual.
-  - Then, a possible signal over this graph should be the aggregate ratings of movies each person has participated in (e.g. actor_1's signal value would be the average of the ratings of every movie he/she took part in).
-  - We could then subsample those ratings and see if the co-apearance information is a good predictor of rating information.
-  - The number of nodes in this graph is of the order of **millions**, so a smaller subset should be constructed.
+The first approach could be to construct a social network of cast/crew members, where the edges are weighted according to co-appearance For example, actor_1 becomes strongly connected to actor_2 if they have appeared in a lot of movies together. The edges of the graph could be weighted according to a count on the number of entertainment products in which the two corresponding people participated together. We can take as a signal on this constructed graph the aggregate ratings of movies each person has participated in. 
 
-|          | Description                            |         Amount |
-| -------- | -------------------------------------- | -------------: |
-| nodes    | cast/crew                              |       Millions |
-| edges    | co-apearance in movies/TV/etc.         | O(10) per node |
-| features | average rating of movies taken part in |              1 |
-| labels   | movie genre                            |        unknown |
+|          | Description                            |                               Amount |
+| -------- | -------------------------------------- | -----------------------------------: |
+| nodes    | cast/crew                              |       millions (IMDb) ~8500 (Kaggle) |
+| edges    | co-apearance in movies/TV/etc.         |                       O(10) per node |
+| features | ratings of movies taken part in        |                       O(10) per node |
+| labels   | movie genre                            |             unknown (IMDb) 3 (Kaggle)|
 
-- Another approach could be to create a movie-network, in which movies are strongly connected if they share a lot of crew/cast members (or some other similarity measure combining this and whether they have similar genres, running times, and release years).
-  - Again, once the graph is constructed, network properties can be analyzed as usual.
-  - The signal on this graph could be either the movie ratings, or the genre labels.
-  - The number of nodes in this graph is of the order of **millions**, so a smaller subset should be constructed (maybe restrict to feature films of only one genre?).
+A second approach could be to create a movie-network, in which movies are strongly connected if they share a lot of crew/cast members (or some other similarity measure combining this and genres, running times, release years, etc.). There are more options for the signal the students could consider on this graph, as they could use either the movie ratings, or the genre labels.
 
 |          | Description                                           |         Amount |
 | -------- | ----------------------------------------------------- | -------------: |
-| nodes    | movies                                                |       Millions |
-| edges    | count of common cast/crew + other feature similarity. | O(10) per node |
-| features | average rating                                        |              1 |
-| labels   | movie genre                                           |        unknown |
+| nodes    | movies                                                |       millions (IMDb) ~5000 (Kaggle) |
+| edges    | count of common cast/crew + other feature similarity. |                       O(10) per node |
+| features | average rating                                        |                                    1 |
+| labels   | movie genre                                           |            unknown (IMDb) 3 (Kaggle) |
+
+For the extra work, there is plenty of extra information. For instance, the students could try to predict the revenue of movies by potentially including extra metadata. Note however that the number of instances in the original dataset is of the order of **millions**, so a smaller subset of those should be used.
 
 * **Data acquisition**: already collected and packaged
 * **Requires down-sampling**: yes if using the original datasets from IMDb, no if using the subsampled dataset from Kaggle
@@ -287,16 +282,13 @@ The IMDd datasets contain information such as crew, rating, and genre for every 
 ## Flight Routes
 By Rodrigo
 
-This OpenFlights/Airline Route Mapper Route Database contains 67,663 routes (EDGES) between 3,321 airports (NODES) on 548 airlines spanning the globe dataset contains information on source and destination of flights throughout the globe.
-
-- The graph should be fairly easy to construct, given that each route has a source and destination airport, which gives essentially an edge list.
-- Visualization of the graph embedded on the globe could be assisted by the supplemented data in https://openflights.org/data.html, which contains, among others, information on latitute/longitude of each airport.
-- The graph is given, so network analysis should be straightforward.
-- The students could also see how well the laplacian eigenmaps explains the geographical embedding of the graph on the world map.
-- A possible signal on the graph could be the (average) number of stops of flights leaving each airport. If we subsample this signal, can we reconstruct it via Tikhonov regularization?
-
 Resources:
 * <https://openflights.org/data.html#route>
+* <https://openflights.org/data.html>
+
+This OpenFlights/Airline Route Mapper Route Database contains 67,663 routes (EDGES) between 3,321 airports (NODES) on 548 airlines spanning the globe.
+
+The construction of the graph is facilitated by the source and destination airports of each flight, which gives essentially an edge list for the airport graph. Students could complement the graph construction by providing weigths to the edges, proportional to the number of flights connecting the corresponding pair of airports. The visualization of the graph embedded on the globe can be achieved by using the supplemented data in https://openflights.org/data.html, which contains, among others, information on latitute/longitude of each airport. A potential goal of the extra work could then be comparing the embedding produced by the Laplacian eigenmaps algorithm seen in the course and the "natural" embedding given by the terrestrial coordinates. The most sensitive part of the project (which could be examined in the extra work) would be to find a label signal on the graph that could be recovered via a label propagation algorithm on the graph. In principle, the average number of stops of flights leaving each airport could fulfill this purpose, but it remains a metter of study whether a subsampled version of this information can be recovered from the topological information of the graph alone or not.
 
 |          | Description                                 | Amount |
 | -------- | ------------------------------------------- | -----: |
@@ -307,4 +299,4 @@ Resources:
 
 * **Data acquisition**: already collected and packaged
 * **Requires down-sampling**: no
-* **Network creation**: network is given as a list of edges
+* **Network creation**: network is essentially given (list of edges)
