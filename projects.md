@@ -201,35 +201,86 @@ Remark 1: There are no labels given for the nodes in this dataset. You can chose
 Remark 2: The creator of this dataset has agreed to provide the data for this project. However, they will be given to you through a private channel and you should not re-distribute it.
 
 
-## Spammer Detection on Social Network
+## Spammers on Social Networks
 by Eda
-
-https://linqs-data.soe.ucsc.edu/public/social_spammer/
 
 The dataset contains 5.6 million users, which are described by 4 features; "user id", "gender", "age group", "spammer label". There are 7 different type of relations between the users indicating the action between them such as profile view, message, poke, etc., which may lead to 7 different directed graph. In total, there are 858 million link between the users. The original task associated with this dataset is to identify the spammers based on their features and links in the network.
 
 Since this dataset is very big, it requires subsampling even during the loading the data and cleaning the network accordingly.
 
-## Cora Citation Network
-by Eda
+Resources:
+* <https://linqs.soe.ucsc.edu/node/236>
+* <https://linqs-data.soe.ucsc.edu/public/social_spammer>
+* Paper: <http://www.cs.umd.edu/~shobeir/papers/fakhraei_kdd_2015.pdf>
+* Code: <https://github.com/shobeir/fakhraei_kdd2015>
+* Data: <https://linqs-data.soe.ucsc.edu/public/social_spammer/usersdata.csv.gz>, <https://linqs-data.soe.ucsc.edu/public/social_spammer/relations.csv.gz>
 
-https://relational.fit.cvut.cz/dataset/CORA
+|          | Description                                                   |      Amount |
+| -------- | ------------------------------------------------------------- | -----------:|
+| nodes    | users of tagged.com                                           |   5,607,447 |
+| edges    | action between users: includes a timestamp and one of 7 types | 858,247,099 |
+| features | sex, timePassedValidation, ageGroup                           |           3 |
+| labels   | spammer or not spammer                                        |           2 |
+
+* **Data acquisition**: already collected and packaged
+* **Requires down-sampling**: yes
+* **Network creation**: network is given as a list of edges
+
+## Citation Network
+by Eda
 
 CORA citation network is a graph containing 2708 vertices representing papers and 5429 edges representing citations. Each paper is described by a 1433-dimensional bag-of-words feature vector and belongs to seven classes (the field of the study). The feature vectors contain 0/1 values indicating the absence/presence of the corresponding word from the dictionary consisting of 1433 unique words. The asscoiated task with this dataset is usually label prediction.
 
-## Terrorist Relations
+Resources:
+* <https://linqs.soe.ucsc.edu/node/236>
+* <https://relational.fit.cvut.cz/dataset/CORA>
+* Paper: <http://www.aaai.org/Papers/ICML/2003/ICML03-066.pdf>
+* Data: <https://linqs-data.soe.ucsc.edu/public/lbc/cora.tgz>
+
+|          | Description                                     | Amount |
+| -------- | ------------------------------------------------| ------:|
+| nodes    | scientific publications                         |  2,708 |
+| edges    | a paper cites another paper                     |  5,429 |
+| features | vector indicating the absence/presence of words |  1,433 |
+| labels   | scientific field                                |      7 |
+
+* **Data acquisition**: already collected and packaged
+* **Requires down-sampling**: no
+* **Network creation**: network is given as a list of edges
+
+## Terrorist Attacks and Relations
 by Eda
 
-http://www.cs.umd.edu/~sen/lbc-proj/LBC.html
+The first dataset consists of 1293 terrorist attacks (nodes), each of which is assigned to one of 6 labels indicating the type of the attack. Each attack is described by a 0/1-valued vector of attributes whose entries indicate the absence/presence of a feature. There are a total of 106 distinct features. The files in the dataset can be used to create two distinct graphs. In one of them edges of the graph connect the colocated attacks. On the other one, edges connect co-located terrorist attacks performed by the same terrorist organization.
 
-This dataset is designed for the classification of the relationships between the terrorists. The dataset contains 851 relations (aka; nodes of the graph). Each node is assigned to least one label (multiple labeling is also possible) among 4 labels; "Colleague", "Congregate", "Contact", "Family", and is described with 0/1 valued feature vector indicating absence/presence of the attributes, which are 1224 in total. There are 8592 edges on the graph, which connects the nodes involving the same terrorist group.
+The second dataset is designed for the classification of the relationships between the terrorists. The dataset contains 851 relations (aka; nodes of the graph). Each node is assigned to least one label (multiple labeling is also possible) among 4 labels; "Colleague", "Congregate", "Contact", "Family", and is described with 0/1 valued feature vector indicating absence/presence of the attributes, which are 1224 in total. There are 8592 edges on the graph, which connects the nodes involving the same terrorist group.
+As the goal is the classification of links, we will here build the [line graph](https://en.wikipedia.org/wiki/Line_graph) of the social network between terrorists.
+That is, instead of having terrorists as nodes and relationships between them as edges, relationships will be nodes and terrorists will be edges.
 
-## Terrorist Attacks
-by Eda
+Resources:
+* <https://linqs.soe.ucsc.edu/node/236>
+* <http://www.cs.umd.edu/~sen/lbc-proj/LBC.html>
+* Paper: <https://pdfs.semanticscholar.org/c047/f91ece3e9ec74bf42b8f69f375e27498a54a.pdf>
+* Data: <https://linqs-data.soe.ucsc.edu/public/lbc/TerrorAttack.tgz>
+* Data: <https://linqs-data.soe.ucsc.edu/public/lbc/TerroristRel.tgz>
 
-http://www.cs.umd.edu/~sen/lbc-proj/LBC.html
+|          | Description                                                                  | Amount |
+| -------- | ---------------------------------------------------------------------------- | ------:|
+| nodes    | relationships                                                                |    851 |
+| edges    | terrorists                                                                   |  8,592 |
+| features | 0-1 vector of attribute values                                               |  1,224 |
+| labels   | type of relationship (non exclusive): colleague, congregate, contact, family |      4 |
 
-This dataset consists of 1293 terrorist attacks (nodes), each of which is assigned to one of 6 labels indicating the type of the attack. Each attack is described by a 0/1-valued vector of attributes whose entries indicate the absence/presence of a feature. There are a total of 106 distinct features. The files in the dataset can be used to create two distinct graphs. In one of them edges of the graph connect the colocated attacks. On the other one, edges connect co-located terrorist attacks performed by the same terrorist organization.
+|          | Description                                                     | Amount |
+| -------- | --------------------------------------------------------------- | ------:|
+| nodes    | terrorist attacks                                               |  1,293 |
+| edges    | connect co-located attacks                                      |  3,172 |
+| features | 0-1 vector of attribute values                                  |    106 |
+| labels   | kind of attack: arson, bombing, kidnapping, weapon, nbcr, other |      6 |
+
+* **Data acquisition**: already collected and packaged
+* **Requires down-sampling**: no
+* **Network creation**: network is given as a list of edges
 
 ## Protein-protein interaction network in yeast
 By Rodrigo
