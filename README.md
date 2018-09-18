@@ -60,7 +60,7 @@ Below is the teaching material you'll find in this repository.
 ## Projects
 
 During the course of a semester project, students exercise the theory seen in class on real data and networks.
-Projects are carried out by groups of four students, and are to be chosen in the list of [proposed projects](projects.md).
+Projects are carried out by groups of four students, and are to be chosen in the list of [proposed projects](projects).
 The students have to deliver four milestones, following the theory seen in class:
 
 1. Network properties: measure and interpret some properties of the network.
@@ -131,7 +131,7 @@ Every time you want to work, do the following:
 [Hermina Petric Maretic](https://people.epfl.ch/hermina.petricmaretic),
 [Effrosyni Simou](https://people.epfl.ch/effrosyni.simou),
 [Rodrigo Pena](https://rodrigo-pena.github.io),
-[Benjamin Ricaud](https://people.epfl.ch/benjamin.ricaud),
+[Benjamin Ricaud](https://github.com/bricaud),
 [Eda Bayram](https://people.epfl.ch/eda.bayram).
 * Invited lecturers:
 [Kirell Benzi](https://www.kirellbenzi.com),
