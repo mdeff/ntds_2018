@@ -246,7 +246,7 @@ Resources:
 * **Requires down-sampling**: no
 * **Network creation**: network is given as a list of edges
 
-## IMDb Films and Crews
+## IMDb Films and Crew
 By Rodrigo
 
 Resources:
