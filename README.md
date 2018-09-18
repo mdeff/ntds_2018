@@ -21,6 +21,7 @@ The course material revolves around the following topics:
 Theoretical knowledge is taught during lectures.
 Practical knowledge is taught through [tutorials](#tutorials).
 Both are practiced and evaluated through a [semester project](#projects).
+More information about the course is found in [those slides][practical_info].
 
 [epfl]: http://edu.epfl.ch/coursebook/en/a-network-tour-of-data-science-EE-558
 [moodle]: http://moodle.epfl.ch/course/view.php?id=15299
@@ -31,7 +32,7 @@ Both are practiced and evaluated through a [semester project](#projects).
 
 Below is the teaching material you'll find in this repository.
 
-1. Practical information about the organization of the course
+1. [Practical informations about the organization of the course][practical_info]
 1. [Installation instructions](#installation)
 1. Introduction: [conda] & [anaconda], [python], [jupyter], [git]
 1. Data exploration with [pandas]
@@ -42,6 +43,8 @@ Below is the teaching material you'll find in this repository.
 1. Network science with [networkx] and [graph-tool]
 1. Graph signal processing with [pygsp]
 1. Concluding remarks
+
+[practical_info]: https://github.com/mdeff/ntds_2018/blob/outputs/slides/ntds_info.pdf
 
 [conda]: https://conda.io
 [anaconda]: https://anaconda.org
