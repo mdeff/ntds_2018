@@ -128,7 +128,7 @@ Every time you want to work, do the following:
 [Pascal Frossard](https://people.epfl.ch/pascal.frossard).
 * Assistants:
 [Michaël Defferrard](http://deff.ch),
-[Hermina Petric Maretic](https://people.epfl.ch/hermina.petricmaretic),
+[Hermina Petric Maretić](https://people.epfl.ch/hermina.petricmaretic),
 [Effrosyni Simou](https://people.epfl.ch/effrosyni.simou),
 [Rodrigo Pena](https://rodrigo-pena.github.io),
 [Benjamin Ricaud](https://github.com/bricaud),
