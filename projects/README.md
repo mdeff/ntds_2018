@@ -47,15 +47,30 @@ Well packaged data usually serves a single task and may restrict your creativity
 ## Free Music Archive
 By Michaël
 
-The [Free Music Archive](http://freemusicarchive.org/) is a free and open library directed by [WFMU](https://wfmu.org/), the longest-running freeform radio station in the United States.
+The [Free Music Archive](http://freemusicarchive.org/) (FMA) is a free and open library directed by [WFMU](https://wfmu.org/), the longest-running freeform radio station in the United States.
 Inspired by [Creative Commons](https://creativecommons.org/) and the open-source software movement, the FMA provides a platform for curators, artists, and listeners to harness the potential of music sharing.
 The website provides a large catalog of artists and tracks, hand-picked by established audio curators. Each track is legally free to download as artists decided to release their works under permissive licenses.
 
-The goal of this project is to analyze the content and interactions between the many types of users of an open community.
-Relations can be studied in the form of similarity graphs between tracks.
-The similarity can at first be established from audio features only.
-Motivated students will explore other sources of information, at the level of the tracks, albums, or artists.
-Relations between artists or even users (that requires scraping the website) are also feasible.
+The goal of this project is to analyze the content created by an open community.
+Through the light of networks, it is possible to examine how music tracks relate to each other.
+Does genre structure the music?
+Do we observe groups of similar artists?
+Can we build a playlist that links two tracks through a smooth transition?
+To answer those questions, we will build a similarity graph between music tracks.
+
+The packaged data consists of music tracks with associated metadata.
+Metadata exists at the level of tracks (e.g., title, creation date), albums (e.g., track number), and artists (e.g, artist name).
+A full-length audio recording is available for each track.
+Additionally, a fixed length feature vector (audio descriptors computed from the waveform) describes the track.
+Relations between tracks can be studied by constructing a similarity graph.
+The similarity graph should at first be computed from audio features only.
+Later, motivated students will explore and merge other sources of information, at the level of tracks, albums, or artists.
+For the first part of the project (milestones 1 to 4), we recommend students to work with tracks that belong to the Hip-Hop and Rock genres of the dataset "FMA small".
+That will create a subset of 2,000 tracks.
+
+It is also feasible to work with other graphs, such as relations between artists or listeners.
+The latter requires to scrap the website.
+We don't recommend exploring those options before having completed the milestones.
 
 Resources:
 * Paper: <https://arxiv.org/abs/1612.01840>
