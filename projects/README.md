@@ -6,7 +6,7 @@ Among the many possibilities, we expect the use of several of the following appr
 
 * graph connectivity and degree distributions, graph model (connected components, hubs, scale free, mean degree...),
 * existence and characterization of communities,
-* Analysis of data on the nodes (correlation between data and network structure),
+* analysis of data on the nodes (correlation between data and network structure),
 * filtering of values on the nodes / label propagation,
 * dynamic activity on the network.
 
@@ -26,10 +26,10 @@ That is inherent to the work of a data scientist, and will mostly involve the fo
 
 While those steps are necessary for every project, the amount of pre-processing will however vary.
 If the project requires raw data to be collected or the network to be created, that will be indicated in the project description.
-So if you're a beginner and don't feel confident, choose a project which requires little pre-processing.
+So if you're a beginner and don't feel confident, choose a project that requires little pre-processing.
 If you feel confident, be adventurous!
 Keep in mind that the amount of work generally trades with flexibility for the second part of the semester.
-Well packaged data usually serve a single task and may restrict your creativity.
+Well packaged data usually serves a single task and may restrict your creativity.
 
 ## List of proposed projects
 
