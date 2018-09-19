@@ -90,11 +90,14 @@ Resources:
 ## US Senators
 By Michaël
 
-The goal of this project is to analyze the voting pattern of US senators.
-We will build a graph between senators.
-The signals on the graph are (i) their political party (i.e., republican, democrat, free) and (ii) their voting activity (i.e., what they voted on a list of issues).
+The goal of this project is to understand the [community structure](https://en.wikipedia.org/wiki/Community_structure) and voting pattern of US senators.
+Will we observe a divide between democrats and republicans?
+Are there sub-communities or moderate members?
+Can we predict what a senator will vote knowing what some senators voted?
+To answer those questions, we will build a similarity graph between senators.
 
-We propose to first build a graph from the votes, i.e., measure the distance between voting vectors.
+For each senator, we know (i) their political party (i.e., republican, democrat, independent), (ii) their voting activity (i.e., what they voted on a list of issues), and (iii) the groups they belong to (e.g., the bills they sponsored, the committees they are member of).
+We propose to first build the similarity graph from the votes, i.e., measure the distance between voting vectors.
 Going further, similarity might be measured from the other features, such as bill sponsoring or committee membership.
 
 Resources:
@@ -106,7 +109,7 @@ Resources:
 | nodes    | US senators                                              |   ~100 |
 | edges    | similarity between senators                              |    N/A |
 | features | votes, bill sponsoring, committee membership, statements |    N/A |
-| labels   | political party (democrat, republican, independent)      |      3 |
+| labels   | political party: democrat, republican, independent       |      3 |
 
 * **Data acquisition**: need to be collected from a web API
 * **Requires down-sampling**: no
