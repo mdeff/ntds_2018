@@ -44,6 +44,16 @@ Well packaged data usually serves a single task and may restrict your creativity
 * [IMDb Films and Crew](#imdb-films-and-crew)
 * [Flight Routes](#flight-routes)
 
+In addition to the above list, we allow teams to work on their own project.
+That is especially relevant to PhD students who want to apply the knowledge acquired in this course to their own problems.
+Teams that choose this option must submit a project proposal.
+The proposal must explain what is the data, where is the network, and what the team wants to do with it.
+The network can either exist in the data, either be constructed from features.
+Nodes should have features and ideally have a label.
+Keep in mind that projects should use tools and ideas from the lectures.
+While the second part is quite open ended, it should include graph and network data aspects, and more generally fall under the scope of the class.
+Look at the below descriptions and discuss with the TAs for guidance.
+
 ## Free Music Archive
 By Michaël
 
