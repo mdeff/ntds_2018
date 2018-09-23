@@ -83,17 +83,15 @@ Below is their work.
 Click the [binder badge][binder_lab] to play with the notebooks from your
 browser without installing anything.
 
-For a local installation, you will need [git], [Python], and packages from the
-[Python scientific stack][scipy]. If you don't know how to install those on
-your platform, we recommend to install [Miniconda], a distribution of the
-[conda] package and environment manager. Please follow the below instructions
-to install it and create an environment for the course.
+For a local installation, you will need [git], [Python], and packages from the [Python scientific stack][scipy].
+If you don't know how to install those on your platform, we recommend to install [Miniconda] or [Anaconda], a distribution of the [conda] package and environment manager.
+Follow the below instructions to install it and create an environment for the course.
 
 1. Download the Python 3.x installer for Windows, macOS, or Linux from
    <https://conda.io/miniconda.html> and install with default settings. Skip
    this step if you have conda already installed (from [Miniconda] or
    [Anaconda]). Linux users may prefer to use their package manager.
-   * Windows: Double-click on the `.exe` file.
+   * Windows: Double-click on `Miniconda3-latest-Windows-x86_64.exe`.
    * macOS: Run `bash Miniconda3-latest-MacOSX-x86_64.sh` in your terminal.
    * Linux: Run `bash Miniconda3-latest-Linux-x86_64.sh` in your terminal.
 1. Open a terminal. Windows: open the Anaconda Prompt from the Start menu.
@@ -115,7 +113,7 @@ Every time you want to work, do the following:
 [git]: https://git-scm.com
 [python]: https://www.python.org
 [scipy]: https://www.scipy.org
-[anaconda]: https://anaconda.org
+[anaconda]: https://www.anaconda.com/download
 [miniconda]: https://conda.io/miniconda.html
 [conda]: https://conda.io
 [conda-forge]: https://conda-forge.org
