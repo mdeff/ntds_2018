@@ -76,7 +76,7 @@ Those data projects are meant to jointly evaluate their theoretical network anal
 
 Below is their work.
 
-* [report, slides, code] Poject name
+* [report, slides, code] Project name
 
 ## Installation
 
