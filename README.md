@@ -34,7 +34,7 @@ Below is the teaching material you'll find in this repository.
 
 1. [Practical informations about the organization of the course][practical_info]
 1. [Installation instructions](#installation)
-1. Introduction: [conda] & [anaconda], [python], [jupyter], [git]
+1. [Introduction][t01]: [conda] & [anaconda], [python], [jupyter], [git]
 1. Data exploration with [pandas]
 1. Numerical computing with [numpy]
 1. Plotting with [matplotlib]
@@ -45,6 +45,8 @@ Below is the teaching material you'll find in this repository.
 1. Concluding remarks
 
 [practical_info]: https://github.com/mdeff/ntds_2018/blob/outputs/slides/ntds_info.pdf
+
+[t01]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/tutorials/01_introduction.ipynb
 
 [conda]: https://conda.io
 [anaconda]: https://anaconda.org
