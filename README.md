@@ -78,10 +78,6 @@ Below is their work.
 
 * [report, slides, code] Poject name
 
-## Schedule
-
-TODO
-
 ## Installation
 
 Click the [binder badge][binder_lab] to play with the notebooks from your
