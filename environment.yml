@@ -6,9 +6,6 @@ dependencies:
   - git=2.19.0
   - python=3.7.0
   - pip=18.0=py37_1
-  - nomkl=3.0=0
-  - blas=1.1=openblas
-  - openblas=0.2.20=8
   - numpy=1.15.1
   - scipy=1.1.0
   - matplotlib=3.0.0
