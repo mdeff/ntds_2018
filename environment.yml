@@ -4,23 +4,23 @@ channels:
   - defaults
 dependencies:
   - git=2.19.0
-  - python=3.7.0
-  - pip=18.0=py37_1
+  - python=3.6.6
+  - pip=18.0
   - numpy=1.15.1
   - scipy=1.1.0
   - matplotlib=3.0.0
   - pandas=0.23.4
-  - networkx=2.2=py_1
-  - pygsp=0.5.1=py_0
-  - ipykernel=4.8.2=py37_0
-  - ipython=6.5.0=py37_0
-  - ipywidgets=7.4.2=py_0
-  - jupyter=1.0.0=py_1
-  - jupyter_client=5.2.3=py_1
-  - jupyter_console=5.2.0=py37_1
-  - jupyter_core=4.4.0=py_0
-  - notebook=5.6.0=py37_1
-  - nbconvert=5.3.1=py_1
-  - nbformat=4.4.0=py_1
-  - jupyterlab=0.34.9=py37_0
-  - jupyterlab_launcher=0.13.1=py_2
+  - networkx=2.2
+  - pygsp=0.5.1
+  - ipykernel=4.8.2
+  - ipython=6.5.0
+  - ipywidgets=7.4.2
+  - jupyter=1.0.0
+  - jupyter_client=5.2.3
+  - jupyter_console=5.2.0
+  - jupyter_core=4.4.0
+  - notebook=5.6.0
+  - nbconvert=5.3.1
+  - nbformat=4.4.0
+  - jupyterlab=0.34.9
+  - jupyterlab_launcher=0.13.1
