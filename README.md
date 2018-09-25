@@ -98,16 +98,22 @@ Follow the below instructions to install it and create an environment for the co
    * Linux: Run `bash Miniconda3-latest-Linux-x86_64.sh` in your terminal.
 1. Open a terminal. Windows: open the Anaconda Prompt from the Start menu.
 1. Install git with `conda install git`.
-1. Download this repository by running
-   `git clone https://github.com/mdeff/ntds_2018`.
+1. Navigate to the folder where you want to store the course material with `cd path/to/ntds`.
+   Windows users may need `\` instead of `/` as the path separator.
+1. Download this repository with `git clone https://github.com/mdeff/ntds_2018`.
+1. Enter the repository with `cd ntds_2018`.
 1. Create an environment with the packages required for the course with
-   `conda env create -f ntds_2018/environment.yml`.
+   `conda env create -f environment.yml`.
+1. If everything went fine, you should be able to run the [`test_install.ipynb`][test_install] notebook after following the below steps.
+
+[test_install]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/test_install.ipynb
 
 Every time you want to work, do the following:
 
 1. Open a terminal. Windows: open the Anaconda Prompt from the Start menu.
 1. Activate the environment with `conda activate ntds_2018`
    (or `activate ntds_2018`, or `source activate ntds_2018`).
+1. Navigate to the folder where you stored the course material with `cd path/to/ntds_2018`.
 1. Start Jupyter with `jupyter notebook` or `jupyter lab`. The command should
    open a new tab in your web browser.
 1. Edit and run the notebooks from your browser.
