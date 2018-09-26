@@ -130,9 +130,16 @@ By Benjamin
 
 Wikipedia is an enormous source of information visited dayly by millions on users. We can understand more about the human behavior by looking at how it is build and how it is accessed. In this project you will investigate the Wikipedia structure and learn more about our use, as human, of the largest encyclopedia ever.
 Pages, with their hyperlinks, can be seen as a network, connecting related or similar pages. We will use graph algorithms taught in the course to analyze the graph and gather relevant pages together. Label propagation and community detection will help to group and categorize pages.
-In a second step, the number of visits per page (for ne month) will be added to analyze the popularity of the articles and check if it influences the popularity of the neighbor pages. The project is open and students can also have access to the evolution in time of the number of visits (visits per hour or per day). Depending on the students progress and motivation, the time series could be analyzed to get interesting information on Wikipedia.
+In a second step, the number of visits per page (for one month) will be added to analyze the popularity of the articles and check if it influences the popularity of the neighbor pages. The project is open and students can also have access to the evolution in time of the number of visits (visits per hour or per day). Depending on the students progress and motivation, the time series could be analyzed to get interesting information on Wikipedia.
 
-Due to the huge amount of data, we will look at a reduced number of pages.
+There will be two steps in the project. In the first part, the teams will investigate a small dataset in order to focus on the graph techniques and not spend too much time on the preprocessing and handling of the data. we will use the dataset available here:
+[SNAP repository](https://snap.stanford.edu/data/wikispeedia.html)
+The file of interest is the path and graph file: wikispeedia_paths-and-graph.tar.gz
+The archive provides the articles titles (articles.tsv), their categories (categories.tsv) and the hyperlinks connecting the pages (links.tsv).
+The first goal will be to create the graph of articles from the data and study it (apply the techniques learned during the course).
+
+In the second step, to allow more freedom and creativity, the students will have access to a graph database where the full wikipedia graph has been stored, along with categories (work in progress within the LTS2 lab, do not look for it on the internet). In addition, the number visits per hour will be available (for one month). Since the graph is enormous (14 millions articles for the english Wikipedia), the goal for the teams will be to focus on a few categories (that they choose freely) and investigate this smaller subgraph. They will have the possibility to answer questions such as how the categories are connected, what are the central articles within categories, what are the articles that bridge categories... Looking at the number of visits, can we detect particular events that triggered an increase in the number of visits? Which pages are involved? It should also be possible to study the graph of articles for different languages and compare the differences.
+
 
 Dataset:
 
