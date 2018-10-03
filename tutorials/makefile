@@ -7,5 +7,6 @@ $(NB):
 
 clean:
 	jupyter nbconvert --inplace --ClearOutputPreprocessor.enabled=True $(NB)
+	rm -rf *.gexf
 
 .PHONY: run $(NB) clean
