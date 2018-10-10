@@ -70,10 +70,12 @@ During the course of a semester project, students exercise the theory seen in cl
 Projects are carried out by groups of four students, and are to be chosen in the list of [proposed projects](projects).
 The students have to deliver four milestones, following the theory seen in class:
 
-1. Network properties: measure and interpret some properties of the network.
+1. [Network properties][m1]: measure and interpret some properties of the network.
 1. Network models: fit some relevant network models and comment on their fitness.
 1. Spectral graph theory: visualize or cluster your graph using the spectrum of the graph Laplacian.
 1. Graph signal processing: analyze data (signals, features) on the graph.
+
+[m1]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/milestones/1_network_properties.ipynb
 
 After completing those milestones, they are free to pursue any other direction of interest.
 Those data projects are meant to jointly evaluate their theoretical network analysis skills and practical Data Science skills.
