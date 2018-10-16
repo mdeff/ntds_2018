@@ -34,14 +34,15 @@ Below is the teaching material you'll find in this repository.
 
 1. [Practical informations about the organization of the course][practical_info]
 1. [Installation instructions](#installation)
-1. [Introduction][t01]: [conda] & [anaconda], [python], [jupyter], [git]
-1. Building graphs from [edge lists][t02a] and [features][t02b] (using [pandas])
-1. Numerical computing with [numpy]
-1. Plotting with [matplotlib]
-1. Interactive graph visualization with [gephi]
-1. Sparse matrices with [scipy]
-1. Network science with [networkx] and [graph-tool]
-1. Graph signal processing with [pygsp]
+1. [Introduction][t01]
+1. [Building graphs from edge lists][t02a]
+1. [Building graphs from features][t02b]
+1. [Plotting with matplotlib][t03]
+1. Interactive graph visualization with gephi
+1. Numerical computing with numpy
+1. Sparse matrices with scipy
+1. Network science with networkx and graph-tool
+1. Graph signal processing with pygsp
 1. Concluding remarks
 
 [practical_info]: https://github.com/mdeff/ntds_2018/blob/outputs/slides/ntds_info.pdf
@@ -49,6 +50,10 @@ Below is the teaching material you'll find in this repository.
 [t01]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/tutorials/01_introduction.ipynb
 [t02a]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/tutorials/02a_graph_from_edge_list.ipynb
 [t02b]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/tutorials/02b_graph_from_features.ipynb
+[t03]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/tutorials/03_matplotlib.ipynb
+
+For this course, we'll introduce and use the following tools:
+[conda] & [anaconda], [python], [jupyter], [git], [numpy], [scipy], [matplotlib], [pandas], [networkx], [graph-tool], [pygsp], [gephi].
 
 [conda]: https://conda.io
 [anaconda]: https://anaconda.org
