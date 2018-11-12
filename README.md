@@ -78,7 +78,7 @@ The students have to deliver four milestones, following the theory seen in class
 
 1. [Network properties][m1]: measure and interpret some properties of the network.
 1. [Network models][m2]: fit some relevant network models and comment on their fitness.
-1. Spectral graph theory: visualize or cluster your graph using the spectrum of the graph Laplacian.
+1. Spectral graph theory: visualize and cluster the network using the spectrum of the graph Laplacian.
 1. Graph signal processing: analyze data (signals, features) on the graph.
 
 [m1]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/milestones/1_network_properties.ipynb
@@ -115,7 +115,7 @@ Follow the below instructions to install it and create an environment for the co
 1. Enter the repository with `cd ntds_2018`.
 1. Create an environment with the packages required for the course with
    `conda env create -f environment.yml`.
-1. If everything went fine, you should be able to run the [`test_install.ipynb`][test_install] notebook after following the below steps.
+1. If everything went fine, you should be able to run the [`test_install.ipynb`][test_install] notebook after following the above steps.
 
 [test_install]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/test_install.ipynb
 
