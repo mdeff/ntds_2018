@@ -39,8 +39,7 @@ Below is the teaching material you'll find in this repository.
 1. [Building graphs from features][t02b]
 1. [Plotting with matplotlib][t03]
 1. [Interactive graph visualization with gephi][t04]
-1. Numerical computing with numpy
-1. Sparse matrices with scipy
+1. [Sparse matrices with scipy][t05]
 1. Network science with networkx and graph-tool
 1. Graph signal processing with pygsp
 1. Concluding remarks
@@ -52,6 +51,7 @@ Below is the teaching material you'll find in this repository.
 [t02b]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/tutorials/02b_graph_from_features.ipynb
 [t03]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/tutorials/03_matplotlib.ipynb
 [t04]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/tutorials/04_graph_visualization.ipynb
+[t05]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/tutorials/05_scipy_sparse.ipynb
 
 For this course, we'll introduce and use the following tools:
 [conda] & [anaconda], [python], [jupyter], [git], [numpy], [scipy], [matplotlib], [pandas], [networkx], [graph-tool], [pygsp], [gephi].
