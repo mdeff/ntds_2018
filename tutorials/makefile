@@ -7,5 +7,7 @@ $(NB):
 
 clean:
 	jupyter nbconvert --inplace --ClearOutputPreprocessor.enabled=True $(NB)
+	rm -rf *.gexf
+	rm -rf *.pdf
 
 .PHONY: run $(NB) clean
