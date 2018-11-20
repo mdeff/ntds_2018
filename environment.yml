@@ -55,6 +55,7 @@ dependencies:
   - python=3.6.6
   - python-dateutil=2.7.3
   - pytz=2018.5
+  - pyunlocbox=0.5.2
   - pyzmq=17.1.2
   - qt=5.6.2
   - qtconsole=4.4.1
