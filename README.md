@@ -80,12 +80,13 @@ The students have to deliver four milestones, following the theory seen in class
    [Best student solution][s1].
 1. [Network models][m2]: fit some relevant network models and comment on their fitness.
 1. [Spectral graph theory][m3]: visualize and cluster the network using the spectrum of the graph Laplacian.
-1. Graph signal processing: analyze data (signals, features) on the graph.
+1. [Graph signal processing][m4]: analyze data (signals, features) on the graph.
 
 [m1]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/milestones/1_network_properties.ipynb
 [s1]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/milestones/1_network_properties_student_solution.ipynb
 [m2]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/milestones/2_network_models.ipynb
 [m3]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/milestones/3_spectral_graph_theory.ipynb
+[m4]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/milestones/4_graph_signal_processing.ipynb
 
 After completing those milestones, they are free to pursue any other direction of interest.
 Those data projects are meant to jointly evaluate their theoretical network analysis skills and practical Data Science skills.
