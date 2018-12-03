@@ -40,7 +40,7 @@ Below is the teaching material you'll find in this repository.
 1. [Plotting with matplotlib][t03]
 1. [Interactive graph visualization with gephi][t04]
 1. [Sparse matrices with scipy][t05]
-1. Network science with networkx and graph-tool
+1. [Linear algebra for graphs and networkx][t06]
 1. Graph signal processing with pygsp
 1. Concluding remarks
 
@@ -52,6 +52,7 @@ Below is the teaching material you'll find in this repository.
 [t03]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/tutorials/03_matplotlib.ipynb
 [t04]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/tutorials/04_graph_visualization.ipynb
 [t05]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/tutorials/05_scipy_sparse.ipynb
+[t06]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/tutorials/06_linalg_and_networkx.ipynb
 
 For this course, we'll introduce and use the following tools:
 [conda] & [anaconda], [python], [jupyter], [git], [numpy], [scipy], [matplotlib], [pandas], [networkx], [graph-tool], [pygsp], [gephi].
