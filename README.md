@@ -21,18 +21,24 @@ The course material revolves around the following topics:
 Theoretical knowledge is taught during lectures.
 Practical knowledge is taught through [tutorials](#tutorials).
 Both are practiced and evaluated through a [semester project](#projects).
-More information about the course is found in [those slides][practical_info].
+Below are slides about the organization of the course.
+
+1. [Course organization][practical_info]
+1. [Project expectations][projects]
+1. Concluding remarks
 
 [epfl]: http://edu.epfl.ch/coursebook/en/a-network-tour-of-data-science-EE-558
 [moodle]: http://moodle.epfl.ch/course/view.php?id=15299
 [2016 edition]: https://github.com/mdeff/ntds_2016
 [2017 edition]: https://github.com/mdeff/ntds_2017
 
+[practical_info]: https://github.com/mdeff/ntds_2018/blob/outputs/slides/ntds_info.pdf
+[projects]: https://github.com/mdeff/ntds_2018/blob/outputs/slides/ntds_projects.pdf
+
 ## Tutorials
 
 Below is the teaching material you'll find in this repository.
 
-1. [Practical informations about the organization of the course][practical_info]
 1. [Installation instructions](#installation)
 1. [Introduction][t01]
 1. [Building graphs from edge lists][t02a]
@@ -42,9 +48,6 @@ Below is the teaching material you'll find in this repository.
 1. [Sparse matrices with scipy][t05]
 1. [Linear algebra for graphs and networkx][t06]
 1. Graph signal processing with pygsp
-1. Concluding remarks
-
-[practical_info]: https://github.com/mdeff/ntds_2018/blob/outputs/slides/ntds_info.pdf
 
 [t01]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/tutorials/01_introduction.ipynb
 [t02a]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/tutorials/02a_graph_from_edge_list.ipynb
