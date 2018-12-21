@@ -86,6 +86,7 @@ The students have to deliver four milestones, following the theory seen in class
 1. [Network models][m2]: fit some relevant network models and comment on their fitness.
    [Best student solution][s2].
 1. [Spectral graph theory][m3]: visualize and cluster the network using the spectrum of the graph Laplacian.
+   [Best student solution][s3].
 1. [Graph signal processing][m4]: analyze data (signals, features) on the graph.
    [Best student solution][s4].
 
@@ -94,6 +95,7 @@ The students have to deliver four milestones, following the theory seen in class
 [m2]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/milestones/2_network_models.ipynb
 [s2]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/milestones/2_network_models_student_solution.ipynb
 [m3]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/milestones/3_spectral_graph_theory.ipynb
+[s3]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/milestones/3_spectral_graph_theory_student_solution.ipynb
 [m4]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/milestones/4_graph_signal_processing.ipynb
 [s4]: https://nbviewer.jupyter.org/github/mdeff/ntds_2018/blob/outputs/milestones/4_graph_signal_processing_student_solution.ipynb
 
