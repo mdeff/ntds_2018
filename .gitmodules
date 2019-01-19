@@ -1,0 +1,135 @@
+[submodule "projects/code/team_01"]
+	path = projects/code/team_01
+	url = https://github.com/illorens/Project_NTDS
+[submodule "projects/code/team_02"]
+	path = projects/code/team_02
+	url = https://github.com/roman-bachmann/US-Senators
+[submodule "projects/code/team_03"]
+	path = projects/code/team_03
+	url = https://github.com/AmauV/NTDS
+[submodule "projects/code/team_04"]
+	path = projects/code/team_04
+	url = https://github.com/swouf/ntds_IMDb_team4
+[submodule "projects/code/team_05"]
+	path = projects/code/team_05
+	url = https://github.com/yf0726/ntds_project
+[submodule "projects/code/team_06"]
+	path = projects/code/team_06
+	url = https://github.com/nicolasFontbonne/Project_ntds
+[submodule "projects/code/team_07"]
+	path = projects/code/team_07
+	url = https://github.com/magoncal/NTDS_Project
+[submodule "projects/code/team_08"]
+	path = projects/code/team_08
+	url = https://github.com/dsalathe/group_ntds
+[submodule "projects/code/team_09"]
+	path = projects/code/team_09
+	url = https://github.com/ProjectNTDS/Network_World_Cup_Analysis
+[submodule "projects/code/team_10"]
+	path = projects/code/team_10
+	url = https://github.com/hugofluhr/Team10_ntds_2018
+[submodule "projects/code/team_11"]
+	path = projects/code/team_11
+	url = https://github.com/angomez/ntds
+[submodule "projects/code/team_12"]
+	path = projects/code/team_12
+	url = https://github.com/franckdess/NTDS_Project
+[submodule "projects/code/team_13"]
+	path = projects/code/team_13
+	url = https://github.com/okhofsk/NTDS_Wikipedia
+[submodule "projects/code/team_14"]
+	path = projects/code/team_14
+	url = https://github.com/padesplaces/ntds_project
+[submodule "projects/code/team_15"]
+	path = projects/code/team_15
+	url = https://github.com/mcherep/ntds-epfl
+[submodule "projects/code/team_16"]
+	path = projects/code/team_16
+	url = https://github.com/GentleDell/IMDb_movie_analysis
+[submodule "projects/code/team_17"]
+	path = projects/code/team_17
+	url = https://github.com/PierreFourcade/A-Netflix-Tour-of-Data-Science---Film-suggestion-by-diffusion-on-graphs
+[submodule "projects/code/team_18"]
+	path = projects/code/team_18
+	url = https://github.com/lkieliger/US-Senators
+[submodule "projects/code/team_19"]
+	path = projects/code/team_19
+	url = https://github.com/AminMekacher/NTDS_Team19
+[submodule "projects/code/team_20"]
+	path = projects/code/team_20
+	url = https://github.com/mfendri2/NTDS_Project_Team20
+[submodule "projects/code/team_21"]
+	path = projects/code/team_21
+	url = https://github.com/sinyil/ntds_2018_Final_Project
+[submodule "projects/code/team_22"]
+	path = projects/code/team_22
+	url = https://github.com/sami2310/NTDS_Project_team22
+[submodule "projects/code/team_23"]
+	path = projects/code/team_23
+	url = https://github.com/Ivo-A/Team23_Wikipedia
+[submodule "projects/code/team_24"]
+	path = projects/code/team_24
+	url = https://github.com/mattminder/wikilinks
+[submodule "projects/code/team_25"]
+	path = projects/code/team_25
+	url = https://github.com/yusiZou/NTDS_project
+[submodule "projects/code/team_27"]
+	path = projects/code/team_27
+	url = https://github.com/natbolon/terrorist_network_weaknesses
+[submodule "projects/code/team_28"]
+	path = projects/code/team_28
+	url = https://github.com/rusucosmin/ntp
+[submodule "projects/code/team_29"]
+	path = projects/code/team_29
+	url = https://github.com/Axeln78/TerrorAttacksNtds
+[submodule "projects/code/team_30"]
+	path = projects/code/team_30
+	url = https://github.com/TTimTT/FMAP
+[submodule "projects/code/team_31"]
+	path = projects/code/team_31
+	url = https://github.com/othmanbck/ntds_project_2018
+[submodule "projects/code/team_32"]
+	path = projects/code/team_32
+	url = https://github.com/senakicir/ntds_project
+[submodule "projects/code/team_33"]
+	path = projects/code/team_33
+	url = https://github.com/JCrobe/NTDS19_FWBF
+[submodule "projects/code/team_34"]
+	path = projects/code/team_34
+	url = https://github.com/coencharles/NTDS_team34
+[submodule "projects/code/team_36"]
+	path = projects/code/team_36
+	url = https://github.com/Team36-ntds2018/Project_free_music_archives_2018
+[submodule "projects/code/team_37"]
+	path = projects/code/team_37
+	url = https://github.com/isabelaconstantin/wikinet
+[submodule "projects/code/team_38"]
+	path = projects/code/team_38
+	url = https://github.com/montalex/NTDS_2018_Final_Project
+[submodule "projects/code/team_40"]
+	path = projects/code/team_40
+	url = https://github.com/rocari96/NTDS-project
+[submodule "projects/code/team_42"]
+	path = projects/code/team_42
+	url = https://github.com/VincentCoriou/Re-balancing-flight-routes-inequalities
+[submodule "projects/code/team_44"]
+	path = projects/code/team_44
+	url = https://github.com/nikolaiorgland/conseil_national
+[submodule "projects/code/team_47"]
+	path = projects/code/team_47
+	url = https://github.com/FrankSchmutz/NTDS2019FinalProject
+[submodule "projects/code/team_49"]
+	path = projects/code/team_49
+	url = https://github.com/MilenaFilipovic/NTDS_Project_Team_49
+[submodule "projects/code/team_50"]
+	path = projects/code/team_50
+	url = https://github.com/ilijagjorgjiev/project_ntds
+[submodule "projects/code/team_51"]
+	path = projects/code/team_51
+	url = https://github.com/emullier/NTDS_team51_BrainNetworks
+[submodule "projects/code/team_52"]
+	path = projects/code/team_52
+	url = https://github.com/rezaho/NetworkTour-of-DataScience
+[submodule "projects/code/team_54"]
+	path = projects/code/team_54
+	url = https://github.com/mouadhhamdi/NTDS_Project
