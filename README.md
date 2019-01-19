@@ -150,6 +150,9 @@ Below is the work of the 180 students enrolled that year.
 * [[report][r52], [slides][s52], [code][c52]] Mood Changing Playlist Generator
 * [[report][r54], [slides][s54], [code][c54]] Fight Against Terrorism
 
+As each team stored their code in a github repository, all their code can conveniently be downloaded with `git clone --recurse-submodules https://github.com/mdeff/ntds_2018`.
+One folder per team will be populated in `projects/code`.
+
 [p31]: projects/proposals/team_31.pdf
 [p44]: projects/proposals/team_44.pdf
 [p51]: projects/proposals/team_51.pdf
