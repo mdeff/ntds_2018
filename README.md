@@ -123,7 +123,7 @@ Below is the work of the 180 students enrolled that year.
 * [[report][r17], [slides][s17], [code][c17]] A Netflix Tour of Data Science — Film suggestion by diffusion on graphs
 * [[report][r18], [slides][s18], [code][c18]] U.S. Senators: A Voting Pattern Study
 * [[report][r19], [slides][s19], [code][c19]] A Data Study of Terrorism and its Tendencies
-* [[report][r20], [slides][s20], [code][c20]] Spammers on social network detection
+* [[report][r20], [slides][s20], [code][c20]] Spammer… Catch me if you can
 * [[report][r21], [slides][s21], [code][c21]] Exposing the True Terrorist Network
 * [[report][r22], [slides][s22], [code][c22]] Small Components' Analysis and Flight Delay Prediction
 * [[report][r23], [slides][s23], [code][c23]] Minipedia
@@ -143,7 +143,7 @@ Below is the work of the 180 students enrolled that year.
 * [[report][r40], [slides][s40], [code][c40]] Can we estimate the earnings of a movie?
 * [[report][r42], [slides][s42], [code][c42]] Re-balancing flight routes inequalities
 * [[proposal][p44], [report][r44], [slides][s44], [code][c44]] Voting patterns in the Swiss National Council
-* [[report][r47], [slides][s47], [code][c47]] Flight Routes Project
+* [[report][r47], [slides][s47], [code][c47]] An overviews of intercontinental flight route connections
 * [[report][r49], [slides][s49], [code][c49]] A Network Tour of Millenial Movies
 * [[report][r50], [slides][s50], [code][c50]] Identifying Spammers on Social Networks
 * [[proposal][p51], [report][r51], [slides][s51], [code][c51]] An exploratory study on the brain dysconnectome
