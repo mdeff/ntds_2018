@@ -133,7 +133,7 @@ Below is the work of the 180 students enrolled that year.
 * [[report][r28], [slides][s28], [code][c28]] A Network Topology Analysis of the Airline Industry
 * [[report][r29], [slides][s29], [code][c29]] Predicting Terror Attacks — A Data Story
 * [[report][r30], [slides][s30], [code][c30]] Free Music Alternative Playlists
-* [[proposal][p31], [report][r31], [slides][s31], [code][c31]] Feminism in Hollywood
+* [[report][r31], [slides][s31], [code][c31], [proposal][p31]] Feminism in Hollywood
 * [[report][r32], [slides][s32], [code][c32]] Genre Classification: A Transductive, Inductive and Deep Approach
 * [[report][r33], [slides][s33], [code][c33]] Friends Will Be Friends: A Network Tour of Musical Friendship
 * [[report][r34], [slides][s34], [code][c34]] Predicting the nature of terrorist attacks
@@ -142,11 +142,11 @@ Below is the work of the 180 students enrolled that year.
 * [[report][r38], [slides][s38], [code][c38]] Tempering the Spread of Epidemics on Aerial Networks
 * [[report][r40], [slides][s40], [code][c40]] Can we estimate the earnings of a movie?
 * [[report][r42], [slides][s42], [code][c42]] Re-balancing flight routes inequalities
-* [[proposal][p44], [report][r44], [slides][s44], [code][c44]] Voting patterns in the Swiss National Council
+* [[report][r44], [slides][s44], [code][c44], [proposal][p44]] Voting patterns in the Swiss National Council
 * [[report][r47], [slides][s47], [code][c47]] An overviews of intercontinental flight route connections
 * [[report][r49], [slides][s49], [code][c49]] A Network Tour of Millenial Movies
 * [[report][r50], [slides][s50], [code][c50]] Identifying Spammers on Social Networks
-* [[proposal][p51], [report][r51], [slides][s51], [code][c51]] An exploratory study on the brain dysconnectome
+* [[report][r51], [slides][s51], [code][c51], [proposal][p51]] An exploratory study on the brain dysconnectome
 * [[report][r52], [slides][s52], [code][c52]] Mood Changing Playlist Generator
 * [[report][r54], [slides][s54], [code][c54]] Fight Against Terrorism
 
