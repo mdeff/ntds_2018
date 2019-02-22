@@ -104,6 +104,8 @@ Those data projects are meant to jointly practice and evaluate their theoretical
 
 Below is the work of the 180 students enrolled that year.
 
+![projects](projects/projects.jpg)
+
 * [[report][r01], [slides][s01], [code][c01]] A Network Analysis of Movie Popularity
 * [[report][r02], [slides][s02], [code][c02]] Learning US Senate voting behavior from bill sponsorship profiles
 * [[report][r03], [slides][s03], [code][c03]] Retrieving the continent labels from the air routes structure
